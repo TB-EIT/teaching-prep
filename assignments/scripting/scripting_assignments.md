@@ -6,6 +6,7 @@
 | --- | --- | --- |
 | <input type="checkbox"> | 1 | What is scripting used for? |
 | <input type="checkbox"> | 2 | What are the biggest differences between PowerShell vs Bash vs Python scripting? |
+| <input type="checkbox"> | 3 | How do you combine (chain) the execution of multiple commands in Bash and PowerShell while controlling their execution based on the success or error of preceding commands. |
 
 ## Basic Flow Control
 
@@ -23,3 +24,22 @@
 | 8 | Create a dictionary/associative array/hash list/map. Add some entries to it using user input or command line parameters. Print out the whole thing. Then print out only some of the values. Change some entries. Print out the count of the entries. Check wether some entry is present or not (print out a boolean result). | <input type="checkbox"> | <input type="checkbox"> | <input type="checkbox"> |
 | 9 | Use a for loop to printout every entry in a dictionary. Use a for loop to printout every odd element of an array. | <input type="checkbox"> | <input type="checkbox"> | <input type="checkbox"> |
 | 10 | Use a while loop to print out user input back to the user as long as they don't enter the "stop" command. | <input type="checkbox"> | <input type="checkbox"> | <input type="checkbox"> |
+| 11 | Create 'separated' directory. Open 'input.txt' file. Put every odd line from that file in 'separated/odd_input.txt' file and every even line of that file into 'separated/even_input.txt' file. | <input type="checkbox"> | <input type="checkbox"> | <input type="checkbox"> |
+
+## Linux/Windows Administration
+
+### Questions
+
+| Can answer? | # | Question |
+| --- | --- | --- |
+| <input type="checkbox"> | 1 | What are environmental variables and how do you set them? |
+| <input type="checkbox"> | 2 | What does it mean to run a command/process in background? Why do it and how? |
+
+### Assignments
+
+| # | Assignment | Can use PowerShell equivalents? | With common optional parameters? |
+| --- | --- | --- | --- |
+| 1 | Practice using 'pwd', 'ls', 'cd' UNIX commands. | | |
+| 2 | Practice using 'touch', 'mkdir', 'cp', 'mv', 'rm' UNIX commands. | | |
+| 3 | Practice using 'cat', 'head', 'tail', 'less', 'more' UNIX commands. | | |
+

@@ -25,6 +25,7 @@
 | 9 | Use a for loop to printout every entry in a dictionary. Use a for loop to printout every odd element of an array. | <input type="checkbox"> | <input type="checkbox"> | <input type="checkbox"> |
 | 10 | Use a while loop to print out user input back to the user as long as they don't enter the "stop" command. | <input type="checkbox"> | <input type="checkbox"> | <input type="checkbox"> |
 | 11 | Create 'separated' directory. Open 'input.txt' file. Put every odd line from that file in 'separated/odd_input.txt' file and every even line of that file into 'separated/even_input.txt' file. | <input type="checkbox"> | <input type="checkbox"> | <input type="checkbox"> |
+| 12 | Write a script which will access a remote machine, navigate to a directory of your choosing, archive all log files older than a day there (can use file names with dates in them to decide), download the archive, and delete the original log files. | <input type="checkbox"> | <input type="checkbox"> | <input type="checkbox"> |
 
 ## Linux/Windows Administration
 

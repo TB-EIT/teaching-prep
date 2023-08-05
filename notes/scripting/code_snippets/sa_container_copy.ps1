@@ -11,13 +11,14 @@ $storageAccountName = $Env:SA_NAME
 $storageAccountKey = $Env:SA_KEY
 $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
 
-# Set the container name
+# Set the container names
 $sourceContainerName = "source-container"
 $destContainerName = "dest-container"
 
-# Get the list of blobs in the container
+# Get the list of blobs in the source container
 $blobs = Get-AzStorageBlob -Container $sourceContainerName -Context $storageContext | Select-Object Name
 
+# For each blob in the list upload its copy to the destination container
 foreach ($b in $blobs) {
   Start-AzStorageBlobCopy `
     -SrcContainer $sourceContainerName `

@@ -1,0 +1,170 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "type": "string",
+            "defaultValue": "606e824b-aaf7-4b4e-9057-b459f6a4436d"
+        },
+        "org": {
+            "type": "string",
+            "defaultValue": "taras",
+            "metadata": {
+                "description": "Name of the organisation that owns this service."
+            }
+        },
+        "service": {
+            "type": "string",
+            "defaultValue": "testappservice",
+            "metadata": {
+                "description": "Name of the service."
+            }
+        },
+        "stage": {
+            "type": "string",
+            "defaultValue": "dev",
+            "metadata": {
+                "description": "Name of the stage where the service is being deployed."
+            }
+        },
+        "hostingPlanName": {
+            "type": "string",
+            "defaultValue": "testarmappserviceplan"
+        },
+        "serverFarmResourceGroup": {
+            "type": "string",
+            "defaultValue": "taras.basiuk.08.07.2023"
+        },
+        "alwaysOn": {
+            "type": "bool",
+            "defaultValue": false
+        },
+        "ftpsState": {
+            "type": "string",
+            "defaultValue": "FtpsOnly"
+        },
+        "sku": {
+            "type": "string",
+            "defaultValue": "Free"
+        },
+        "skuCode": {
+            "type": "string",
+            "defaultValue": "F1"
+        },
+        "workerSize": {
+            "type": "string",
+            "defaultValue": "0"
+        },
+        "workerSizeId": {
+            "type": "string",
+            "defaultValue": "0"
+        },
+        "numberOfWorkers": {
+            "type": "string",
+            "defaultValue": "1"
+        },
+        "currentStack": {
+            "type": "string",
+            "defaultValue": "dotnet"
+        },
+        "phpVersion": {
+            "type": "string",
+            "defaultValue": "OFF"
+        },
+        "netFrameworkVersion": {
+            "type": "string",
+            "defaultValue": "v7.0"
+        }
+    },
+    "variables": {
+        "appServiceName": "[format('{0}-{1}-{2}-{3}', parameters('org'), parameters('service'), parameters('stage'), resourceGroup().location)]"
+    },
+    "resources": [
+        {
+            "apiVersion": "2018-11-01",
+            "name": "[variables('appServiceName')]",
+            "type": "Microsoft.Web/sites",
+            "location": "[resourceGroup().location]",
+            "tags": {},
+            "dependsOn": [
+                "microsoft.insights/components/testarmappservice",
+                "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
+            ],
+            "properties": {
+                "name": "[variables('appServiceName')]",
+                "siteConfig": {
+                    "appSettings": [
+                        {
+                            "name": "APPLICATIONINSIGHTS_CONNECTION_STRING",
+                            "value": "[reference('microsoft.insights/components/testarmappservice', '2015-05-01').ConnectionString]"
+                        },
+                        {
+                            "name": "ApplicationInsightsAgent_EXTENSION_VERSION",
+                            "value": "~2"
+                        },
+                        {
+                            "name": "XDT_MicrosoftApplicationInsights_Mode",
+                            "value": "default"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "name": "CURRENT_STACK",
+                            "value": "[parameters('currentStack')]"
+                        }
+                    ],
+                    "phpVersion": "[parameters('phpVersion')]",
+                    "netFrameworkVersion": "[parameters('netFrameworkVersion')]",
+                    "alwaysOn": "[parameters('alwaysOn')]",
+                    "ftpsState": "[parameters('ftpsState')]"
+                },
+                "serverFarmId": "[concat('/subscriptions/', parameters('subscriptionId'),'/resourcegroups/', parameters('serverFarmResourceGroup'), '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
+                "clientAffinityEnabled": true,
+                "virtualNetworkSubnetId": null,
+                "httpsOnly": true,
+                "publicNetworkAccess": "Enabled"
+            }
+        },
+        {
+            "apiVersion": "2018-11-01",
+            "name": "[parameters('hostingPlanName')]",
+            "type": "Microsoft.Web/serverfarms",
+            "location": "[ resourceGroup().location ]",
+            "kind": "",
+            "tags": {},
+            "dependsOn": [],
+            "properties": {
+                "name": "[parameters('hostingPlanName')]",
+                "workerSize": "[parameters('workerSize')]",
+                "workerSizeId": "[parameters('workerSizeId')]",
+                "numberOfWorkers": "[parameters('numberOfWorkers')]",
+                "zoneRedundant": false
+            },
+            "sku": {
+                "Tier": "[parameters('sku')]",
+                "Name": "[parameters('skuCode')]"
+            }
+        },
+        {
+            "apiVersion": "2020-02-02-preview",
+            "name": "testarmappservice",
+            "type": "microsoft.insights/components",
+            "location": "[ resourceGroup().location ]",
+            "tags": {},
+            "dependsOn": [],
+            "properties": {
+                "ApplicationId": "[variables('appServiceName')]",
+                "Request_Source": "IbizaWebAppExtensionCreate",
+                "Flow_Type": "Redfield",
+                "Application_Type": "web",
+                "WorkspaceResourceId": "/subscriptions/606e824b-aaf7-4b4e-9057-b459f6a4436d/resourcegroups/defaultresourcegroup-eus/providers/microsoft.operationalinsights/workspaces/defaultworkspace-606e824b-aaf7-4b4e-9057-b459f6a4436d-eus"
+            }
+        }
+    ],
+    "outputs": {
+        "appServiceName": {
+            "type": "string",
+            "value": "[variables('appServiceName')]"
+        }
+    }
+}

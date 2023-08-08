@@ -14,9 +14,6 @@
         "alwaysOn": {
             "value": false
         },
-        "ftpsState": {
-            "value": "FtpsOnly"
-        },
         "sku": {
             "value": "Free"
         },
@@ -34,9 +31,6 @@
         },
         "currentStack": {
             "value": "dotnet"
-        },
-        "phpVersion": {
-            "value": "OFF"
         },
         "netFrameworkVersion": {
             "value": "v7.0"

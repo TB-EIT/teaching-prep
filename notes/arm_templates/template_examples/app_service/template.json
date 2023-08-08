@@ -33,15 +33,11 @@
         },
         "serverFarmResourceGroup": {
             "type": "string",
-            "defaultValue": "taras.basiuk.08.07.2023"
+            "defaultValue": "taras.basiuk.08.08.2023"
         },
         "alwaysOn": {
             "type": "bool",
             "defaultValue": false
-        },
-        "ftpsState": {
-            "type": "string",
-            "defaultValue": "FtpsOnly"
         },
         "sku": {
             "type": "string",
@@ -67,37 +63,34 @@
             "type": "string",
             "defaultValue": "dotnet"
         },
-        "phpVersion": {
-            "type": "string",
-            "defaultValue": "OFF"
-        },
         "netFrameworkVersion": {
             "type": "string",
             "defaultValue": "v7.0"
         }
     },
     "variables": {
-        "appServiceName": "[format('{0}-{1}-{2}-{3}', parameters('org'), parameters('service'), parameters('stage'), resourceGroup().location)]"
+        "appServiceName": "[format('{0}-{1}-{2}-{3}-withinsights', parameters('org'), parameters('service'), parameters('stage'), resourceGroup().location)]"
     },
     "resources": [
         {
             "apiVersion": "2018-11-01",
-            "name": "[variables('appServiceName')]",
+            "name": "[concat(variables('appServiceName'), '-', copyIndex())]",
             "type": "Microsoft.Web/sites",
             "location": "[resourceGroup().location]",
             "tags": {},
             "dependsOn": [
-                "microsoft.insights/components/testarmappservice",
                 "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
             ],
             "properties": {
-                "name": "[variables('appServiceName')]",
+                "name": "[concat(variables('appServiceName'), '-', copyIndex())]",
                 "siteConfig": {
                     "appSettings": [
+                        /*
                         {
                             "name": "APPLICATIONINSIGHTS_CONNECTION_STRING",
                             "value": "[reference('microsoft.insights/components/testarmappservice', '2015-05-01').ConnectionString]"
                         },
+                        */
                         {
                             "name": "ApplicationInsightsAgent_EXTENSION_VERSION",
                             "value": "~2"
@@ -113,16 +106,18 @@
                             "value": "[parameters('currentStack')]"
                         }
                     ],
-                    "phpVersion": "[parameters('phpVersion')]",
                     "netFrameworkVersion": "[parameters('netFrameworkVersion')]",
-                    "alwaysOn": "[parameters('alwaysOn')]",
-                    "ftpsState": "[parameters('ftpsState')]"
+                    "alwaysOn": "[parameters('alwaysOn')]"
                 },
                 "serverFarmId": "[concat('/subscriptions/', parameters('subscriptionId'),'/resourcegroups/', parameters('serverFarmResourceGroup'), '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
                 "clientAffinityEnabled": true,
                 "virtualNetworkSubnetId": null,
                 "httpsOnly": true,
                 "publicNetworkAccess": "Enabled"
+            },
+            "copy": {
+                "name": "appservicecopy",
+                "count": 2
             }
         },
         {
@@ -130,7 +125,7 @@
             "name": "[parameters('hostingPlanName')]",
             "type": "Microsoft.Web/serverfarms",
             "location": "[ resourceGroup().location ]",
-            "kind": "",
+            "kind": "app",
             "tags": {},
             "dependsOn": [],
             "properties": {
@@ -147,17 +142,22 @@
         },
         {
             "apiVersion": "2020-02-02-preview",
-            "name": "testarmappservice",
+            "name": "[concat('testarmappservice-', copyIndex())]",
             "type": "microsoft.insights/components",
             "location": "[ resourceGroup().location ]",
             "tags": {},
+            "condition": "[contains(variables('appServiceName'), 'withinsights')]",
             "dependsOn": [],
             "properties": {
-                "ApplicationId": "[variables('appServiceName')]",
+                "ApplicationId": "[concat(variables('appServiceName'), '-', copyIndex())]",
                 "Request_Source": "IbizaWebAppExtensionCreate",
                 "Flow_Type": "Redfield",
                 "Application_Type": "web",
                 "WorkspaceResourceId": "/subscriptions/606e824b-aaf7-4b4e-9057-b459f6a4436d/resourcegroups/defaultresourcegroup-eus/providers/microsoft.operationalinsights/workspaces/defaultworkspace-606e824b-aaf7-4b4e-9057-b459f6a4436d-eus"
+            },
+            "copy": {
+                "name": "insightscopy",
+                "count": 2
             }
         }
     ],

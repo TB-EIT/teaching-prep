@@ -25,7 +25,7 @@
 * * [What-If Operation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-what-if?tabs=azure-powershell)
 * * [Linked Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs-create-linked?tabs=azure-powershell)
 * * [Deployment Modes](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-modes)
-* * [Copy Property][https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/copy-properties]
+* * [Copy Property](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/copy-properties)
 * * [Conditional Deployment](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/conditional-resource-deployment)
 * * [KeyVault Integration](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-use-key-vault)
 

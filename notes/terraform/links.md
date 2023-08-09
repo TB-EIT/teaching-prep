@@ -21,4 +21,5 @@
 * [Data Sources](https://developer.hashicorp.com/terraform/language/data-sources)
 * [Modules](https://developer.hashicorp.com/terraform/language/modules)
 * [Functions](https://developer.hashicorp.com/terraform/language/functions)
+* [Count](https://developer.hashicorp.com/terraform/language/meta-arguments/count) / [For-Each](https://developer.hashicorp.com/terraform/language/meta-arguments/for_each)
 * [Provider Alias](https://developer.hashicorp.com/terraform/language/providers/configuration#alias-multiple-provider-configurations)

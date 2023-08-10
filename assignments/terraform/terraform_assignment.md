@@ -1,4 +1,4 @@
-# Azure Resource Manager (ARM) Templates
+# Terraform Templates
 
 ## General
 

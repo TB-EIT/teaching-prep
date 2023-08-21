@@ -16,7 +16,7 @@
 | <input type="checkbox"> | 8 | What is branch protection in git? What types of branch protection are there? |
 | <input type="checkbox"> | 9 | What is pull request? When do you typically have to create one? |
 | <input type="checkbox"> | 10 | What useful utility git commands are you proficient in using? |
-| <input type="checkbox"> | 11 | How do you un-stage a file? How do you revert a commit? |
+| <input type="checkbox"> | 11 | How do you un-stage a file? How do you reset a commit? How do you revert a commit? |
 | <input type="checkbox"> | 12 | What is git stash and how do you use it? |
 | <input type="checkbox"> | 13 | What is git rebase? What is it used for? How can you use it? |
 
@@ -31,7 +31,7 @@
 | <input type="checkbox"> | 5 | Create a new local branch. Commit changes to that local branch. Merge those changes into main branch locally. Delete the local branch. Save the screenshots. |
 | <input type="checkbox"> | 6 | Do the same as above, but with a new remote branch. Save the screenshots. |
 | <input type="checkbox"> | 7 | Demonstrate the usage of 'status', 'diff', 'logs', 'blame', 'show' utility commands. Save the screenshots. |
-| <input type="checkbox"> | 8 | Un-stage a file for commit. Revert a commit. Save the screenshots. |
+| <input type="checkbox"> | 8 | Un-stage a file for commit. Reset a commit. Revert a commit. Save the screenshots. |
 | <input type="checkbox"> | 9 | Demonstrate a meaningful usage of 'stash' command. Save the screenshots. |
 | <input type="checkbox"> | 10 | Add a collaborator (fellow consultant) to your GitHub/Azure DevOps repository. Configure a main branch protection to require pull requests. Save the screenshots. |
 | <input type="checkbox"> | 11 | Submit and Review a pull request to/from your collaborator. Save the screenshots. |

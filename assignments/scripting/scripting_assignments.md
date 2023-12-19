@@ -46,7 +46,7 @@
 | 3 | Practice using 'cat', 'head', 'tail', 'less', 'more' UNIX commands. | | |
 | 4 | Practice using 'grep', 'find' UNIX commands. | | |
 | 5 | Practice using 'ps', 'top/htop', 'kill', 'which' UNIX commands. | | |
-| 6 | Practice using 'apt/apt-get' or 'yum' or 'brew' utility on your UNIX machine. | | |
+| 6 | Practice using 'apt/apt-get' or 'yum' or 'brew' or 'snap' utility on your UNIX machine. | | |
 | 7 | Practice using 'ssh', 'sftp', 'scp' UNIX commands. | | |
 | 8 | Practice using 'stat', 'chmod', 'chown' UNIX commands. | | |
 | 9 | Practice using 'cron' UNIX utility. | | |

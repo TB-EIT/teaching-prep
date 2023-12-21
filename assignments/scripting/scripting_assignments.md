@@ -47,9 +47,9 @@
 | 4 | Practice using 'grep', 'find' UNIX commands. | | |
 | 5 | Practice using 'ps', 'top/htop', 'kill', 'which' UNIX commands. | | |
 | 6 | Practice using 'apt/apt-get' or 'yum' or 'brew' or 'snap' utility on your UNIX machine. | | |
-| 7 | Practice using 'ssh', 'sftp', 'scp' UNIX commands. | | |
+| 7 | Practice using 'ssh', 'sftp', 'scp', 'curl', 'wget' UNIX commands. | | |
 | 8 | Practice using 'stat', 'chmod', 'chown' UNIX commands. | | |
 | 9 | Practice using 'cron' UNIX utility. | | |
 | 10 | Practice using 'tar', 'gzip', 'gunzip' UNIX commands. | | |
-| 11 | Practice using 'ping', 'ifconfig', 'netstat' UNIX commands. | | |
+| 11 | Practice using 'ping', 'traceroute', 'ifconfig', 'netstat', 'dnslookup' UNIX commands. | | |
 | 12 | Practice using 'hostname', 'who', 'date', 'uptime', 'reboot', 'shutdown' UNIX commands. | | |

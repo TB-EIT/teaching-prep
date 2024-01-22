@@ -9,3 +9,4 @@
 7. (Re-)Tag the container with custom container tag.
 8. Push the container to a remote contaner registry.
 9. Practice other useful docker commands.
+10. Build a multi-stage docker image.

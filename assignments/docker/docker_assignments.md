@@ -21,6 +21,6 @@
 |             | 7 | Utilize port-forwarding options to launch multiple containers on the same machine. |
 |             | 8 | (Re-)Tag the container with custom container tag. |
 |             | 9 | Push the container to a remote container registry. |
-|             | 10 | Practice other useful docker commands (). |
-|             | 11 | Build a multi-stage docker image. |
+|             | 10 | Practice other useful docker commands (docker logs, docker images, docker ps, docker rmi, docker volume ls). |
+|             | 11 | (Bonus) Build a multi-stage docker image. |
 |             | 12 | (Bonus) Pull the container from a remote container registry onto a different machine and run it. |

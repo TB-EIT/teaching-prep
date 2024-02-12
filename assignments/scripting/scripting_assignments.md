@@ -44,7 +44,7 @@
 | 1 | Practice using 'pwd', 'ls', 'cd' UNIX commands. | | |
 | 2 | Practice using 'touch', 'mkdir', 'cp', 'mv', 'rm' UNIX commands. | | |
 | 3 | Practice using 'cat', 'head', 'tail', 'less', 'more' UNIX commands. | | |
-| 4 | Practice using 'grep', 'find' UNIX commands. | | |
+| 4 | Practice using 'grep', 'sed', 'find' UNIX commands. | | |
 | 5 | Practice using 'ps', 'top/htop', 'kill', 'which' UNIX commands. | | |
 | 6 | Practice using 'apt/apt-get' or 'yum' or 'brew' or 'snap' utility on your UNIX machine. | | |
 | 7 | Practice using 'ssh', 'sftp', 'scp', 'curl', 'wget' UNIX commands. | | |

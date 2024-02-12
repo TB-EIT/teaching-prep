@@ -45,13 +45,13 @@
 | 2 | Practice using 'touch', 'mkdir', 'cp', 'mv', 'rm' UNIX commands. | | |
 | 3 | Practice using 'cat', 'head', 'tail', 'less', 'more' UNIX commands. | | |
 | 4 | Practice using 'grep', 'sed', 'find' UNIX commands. | | |
-| 5 | Practice using '|', '>', '>>', '<', '2>' UNIX redirects. | | |
+| 5 | Practice using '\|', '>', '>>', '<', '2>' UNIX redirects. | | |
 | 6 | Practice using 'ps', 'top/htop', 'kill', 'which' UNIX commands and '&' operator. | | |
 | 7 | Practice using 'apt/apt-get' or 'yum' or 'brew' or 'snap' utility on your UNIX machine. | | |
 | 8 | Practice using 'ssh', 'sftp', 'scp', 'curl', 'wget' UNIX commands. | | |
 | 9 | Practice using 'stat', 'chmod', 'chown' UNIX commands. | | |
 | 10 | Practice using 'cron' UNIX utility. | | |
 | 11 | Practice using 'tar', 'gzip', 'gunzip' UNIX commands. | | |
-| 12 | Practice using '&&', '||', ';', '\' UNIX operators. | | |
+| 12 | Practice using '&&', '\|\|', ';', '\' UNIX operators. | | |
 | 11 | Practice using 'ping', 'traceroute', 'ifconfig', 'netstat', 'dig', 'nslookup' UNIX commands. | | |
 | 12 | Practice using 'hostname', 'who', 'date', 'uptime', 'reboot', 'shutdown' UNIX commands. | | |

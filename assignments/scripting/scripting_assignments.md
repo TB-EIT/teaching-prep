@@ -52,6 +52,6 @@
 | 9 | Practice using 'stat', 'chmod', 'chown' UNIX commands. | | |
 | 10 | Practice using 'cron' UNIX utility. | | |
 | 11 | Practice using 'tar', 'gzip', 'gunzip' UNIX commands. | | |
-| 12 | Practice using '&&', '\|\|', ';', '\' UNIX operators. | | |
+| 12 | Practice using '&&', '\|\|', ';', '\\' UNIX operators. | | |
 | 13 | Practice using 'ping', 'traceroute', 'ifconfig', 'netstat', 'dig', 'nslookup' UNIX commands. | | |
 | 14 | Practice using 'hostname', 'who', 'date', 'uptime', 'reboot', 'shutdown' UNIX commands. | | |

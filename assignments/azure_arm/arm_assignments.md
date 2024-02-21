@@ -25,4 +25,4 @@
 | <input type="checkbox"> | 7 | Use conditional deployment in your template. |
 | <input type="checkbox"> | 8 | Use copy property in your template. |
 | <input type="checkbox"> | 9 | Use nested templates. |
-| <input type="checkbox"> | 10 | Use linked templates. |
+| <input type="checkbox"> | 10 | (Bonus) Use linked templates. |

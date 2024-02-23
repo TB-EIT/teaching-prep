@@ -27,3 +27,4 @@
 | <input type="checkbox"> | 9 | Use the count property to achieve conditional deployment in your configuration file. |
 | <input type="checkbox"> | 10 | Use a module in your configuration file. |
 | <input type="checkbox"> | 11 | Configure the use of the remote state file in your configuration file. |
+| <input type="checkbox"> | 12 | (Bonus) Configure the use of a service principle to authorize the deployment of resources to Azure. Pass the service principle credentials via environmental variables. |

@@ -37,3 +37,4 @@
 | <input type="checkbox"> | 11 | Add a collaborator (fellow consultant) to your GitHub/Azure DevOps repository. Configure a main branch protection to require pull requests. Save the screenshots. |
 | <input type="checkbox"> | 12 | Submit and Review a pull request to/from your collaborator. Save the screenshots. |
 | <input type="checkbox"> | 13 | (Bonus) Demonstrate the usage of git rebase under a scenario of your choice. Save the screenshots. |
+| <input type="checkbox"> | 14 | (Bonus) Submit a PR from a forked repository and merge the changes into the main of the origin repository. |

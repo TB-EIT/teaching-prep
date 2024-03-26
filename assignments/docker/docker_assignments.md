@@ -24,3 +24,6 @@
 |             | 10 | Practice other useful docker commands (docker logs, docker images, docker ps, docker rmi, docker volume ls). |
 |             | 11 | (Bonus) Build a multi-stage docker image. |
 |             | 12 | (Bonus) Pull the container from a remote container registry onto a different machine and run it. |
+
+### Rare Questions
+1. What is the purpose of the "docker commit" command?

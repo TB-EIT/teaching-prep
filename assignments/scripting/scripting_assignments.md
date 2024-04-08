@@ -52,7 +52,9 @@
 | 8 | Practice using 'ssh', 'sftp', 'scp', 'curl', 'wget' UNIX commands. | | |
 | 9 | Practice using 'stat', 'chmod', 'chown' UNIX commands. | | |
 | 10 | Practice using 'cron' UNIX utility. | | |
-| 11 | Practice using 'tar', 'gzip', 'gunzip' UNIX commands. | | |
-| 12 | Practice using '&&', '\|\|', ';', '\\' UNIX operators. | | |
-| 13 | Practice using 'ping', 'traceroute', 'ifconfig', 'netstat', 'dig', 'nslookup' UNIX commands. | | |
-| 14 | Practice using 'hostname', 'who', 'date', 'uptime', 'reboot', 'shutdown' UNIX commands. | | |
+| 11 | (Bonus) Practice using 'systemd' UNIX utility. | | |
+| 12 | Practice using 'tar', 'gzip', 'gunzip' UNIX commands. | | |
+| 13 | Practice using '&&', '\|\|', ';', '\\' UNIX operators. | | |
+| 14 | Practice using 'ping', 'traceroute', 'ifconfig', 'netstat', 'dig', 'nslookup' UNIX commands. | | |
+| 15 | Practice using 'df', 'du' | | |
+| 16 | Practice using 'hostname', 'who', 'date', 'uptime', 'reboot', 'shutdown' UNIX commands. | | |

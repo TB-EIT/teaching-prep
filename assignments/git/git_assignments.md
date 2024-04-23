@@ -38,3 +38,4 @@
 | <input type="checkbox"> | 12 | Submit and Review a pull request to/from your collaborator. Save the screenshots. |
 | <input type="checkbox"> | 13 | (Bonus) Demonstrate the usage of git rebase under a scenario of your choice. Save the screenshots. |
 | <input type="checkbox"> | 14 | (Bonus) Submit a PR from a forked repository and merge the changes into the main of the origin repository. |
+| <input type="checkbox"> | 15 | (Bonus) Configure a local pre-commit hook. |

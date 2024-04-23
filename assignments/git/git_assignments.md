@@ -24,8 +24,8 @@
 
 | Done? | # | Assignment |
 | --- | --- | --- |
-| <input type="checkbox"> | 1 | Make a new local git repository. Make it track a new remote git repository (GitHub or Azure Devops). Save the screenshots. |
-| <input type="checkbox"> | 2 | Make another local git repository copy of an existing remote git repository (that you can push to). Save the screenshots. |
+| <input type="checkbox"> | 1 | Make local git repository copy (clone) of an existing remote git repository (that you can push to). Save the screenshots. |
+| <input type="checkbox"> | 2 | Make a new local git repository. Make it track a new remote git repository (GitHub or Azure Devops). Save the screenshots. |
 | <input type="checkbox"> | 3 | Add/Save changes to the local git repository. Save the screenshots. |
 | <input type="checkbox"> | 4 | Pull from a remote repository (no changes is fine). Push a change to a remote repository. Verify the change on GitHub/Azure Devops repository. Save the screenshots. |
 | <input type="checkbox"> | 5 | Create a new local branch. Commit changes to that local branch. Merge those changes into main branch locally. Delete the local branch. Save the screenshots. |

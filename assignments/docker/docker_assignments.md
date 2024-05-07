@@ -19,7 +19,7 @@
 |             | 5 | Attach a Persistent Volume to the container. Runs some commands inside the container to create files on the persistent volume. Delete the container (but not the volume), create new container, with the old volume, demonstrate that the old files on the volume are still available. |
 |             | 6 | Use bind mount to sync the contents of a folder outside the container with a folder inside the container. |
 |             | 7 | Utilize port-forwarding options to launch multiple containers on the same machine. |
-|             | 8 | (Re-)Tag the container with custom container tag. |
+|             | 8 | (Re-)Tag the image with custom image tag. |
 |             | 9 | Push the container to a remote container registry. |
 |             | 10 | Practice other useful docker commands (docker logs, docker images, docker ps, docker rmi, docker volume ls). |
 |             | 11 | (Bonus) Build a multi-stage docker image. |

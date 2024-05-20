@@ -43,8 +43,8 @@
 | # | Assignment | Can use PowerShell equivalents? | With common optional parameters? |
 | --- | --- | --- | --- |
 | 1 | Practice using 'pwd', 'ls', 'cd' UNIX commands and special '.', '..', '~', '-' directories. | | |
-| 2 | Practice using 'touch', 'mkdir', 'cp', 'mv', 'rm' UNIX commands. | | |
-| 3 | Practice using 'cat', 'head', 'tail', 'less', 'more' UNIX commands. | | |
+| 2 | Practice using 'touch', 'mkdir', 'cp', 'mv', 'rm' UNIX commands. (Bonus) Practice using wildcards to target multiple files/directories with those commands at once. | | |
+| 3 | Practice using 'cat', 'head', 'tail', 'less', 'more' UNIX commands. Use 'nano' or 'vi'/'vim' to create some file contents to browse. | | |
 | 4 | Practice using 'grep', 'sed', 'find' UNIX commands. | | |
 | 5 | Practice using '\|', '>', '>>', '<', '2>' UNIX redirects. | | |
 | 6 | Practice using 'ps', 'top/htop', 'kill', 'which' UNIX commands and '&' operator. | | |
@@ -54,7 +54,7 @@
 | 10 | Practice using 'cron' UNIX utility. | | |
 | 11 | (Bonus) Practice using 'systemd' UNIX utility. | | |
 | 12 | Practice using 'tar', 'gzip', 'gunzip' UNIX commands. | | |
-| 13 | Practice using '&&', '\|\|', ';', '\\' UNIX operators. | | |
+| 13 | Practice using '&&', '\|\|', ';', '\\', '$( ... )' UNIX operators. | | |
 | 14 | Practice using 'ping', 'traceroute', 'ifconfig', 'netstat', 'dig', 'nslookup' UNIX commands. | | |
 | 15 | Practice using 'df', 'du' | | |
 | 16 | Practice using 'hostname', 'who', 'date', 'uptime', 'reboot', 'shutdown' UNIX commands. | | |

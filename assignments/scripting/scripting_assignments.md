@@ -42,7 +42,7 @@
 
 | # | Assignment | Can use PowerShell equivalents? | With common optional parameters? |
 | --- | --- | --- | --- |
-| 1 | Practice using 'pwd', 'ls', 'cd' UNIX commands and special '.', '..', '~', '-' directories. | | |
+| 1 | Practice using 'pwd', 'ls', 'cd' UNIX commands and special '.', '..', '/', '~', '-' directories. | | |
 | 2 | Practice using 'touch', 'mkdir', 'cp', 'mv', 'rm' UNIX commands. (Bonus) Practice using wildcards to target multiple files/directories with those commands at once. | | |
 | 3 | Practice using 'cat', 'head', 'tail', 'less', 'more' UNIX commands. Use 'nano' or 'vi'/'vim' to create some file contents to browse. | | |
 | 4 | Practice using 'grep', 'sed', 'find' UNIX commands. | | |

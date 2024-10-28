@@ -17,7 +17,7 @@
 | Done? | # | Assignment |
 | --- | --- | --- |
 | <input type="checkbox"> | 1 | Write a Terraform configuration file (template) for a VM deployment (with custom RG, VNet, subnet, NSG, NIC, PIP). Run terraform init, validate, plan, and apply commands to deploy the App Service (save the screenshots). |
-| <input type="checkbox"> | 2 | Use variables in your configuration file. Pass the variable values through the defaults, command line arguments (save the screenshot), and variable files. |
+| <input type="checkbox"> | 2 | Use variables in your configuration file. Pass the variable values through the defaults, command line arguments (save the screenshot), and variable values files. |
 | <input type="checkbox"> | 3 | Use locals and built-in functions in your configuration file. |
 | <input type="checkbox"> | 4 | Use outputs in your configuration file. |
 | <input type="checkbox"> | 5 | Use both implicit and explicit dependencies in your configuration file. |

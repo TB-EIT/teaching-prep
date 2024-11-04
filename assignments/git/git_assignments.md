@@ -31,7 +31,7 @@
 | <input type="checkbox"> | 5 | Create a new local branch. Commit changes to that local branch. Merge those changes into main branch locally. Delete the local branch. Save the screenshots. |
 | <input type="checkbox"> | 6 | Do the same as above, but with a new remote branch. Save the screenshots. |
 | <input type="checkbox"> | 7 | Demonstrate the usage of 'status', 'diff', 'log', 'blame', 'show' utility commands. Save the screenshots. |
-| <input type="checkbox"> | 8 | Un-stage a file for commit. Reset a commit. Revert a commit. Save the screenshots. |
+| <input type="checkbox"> | 8 | Resore file from being changed (before it was staged for commit). Un-stage a file for commit. Reset a commit. Revert a commit. Save the screenshots. |
 | <input type="checkbox"> | 9 | (Bonus) Demonstrate a manual code commit conflict resolution procedure. |
 | <input type="checkbox"> | 10 | Demonstrate a meaningful usage of 'stash' command. Save the screenshots. |
 | <input type="checkbox"> | 11 | Demonstrate a meaningful usage of .gitignore file. Save the screenshots. |

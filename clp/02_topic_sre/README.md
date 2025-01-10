@@ -10,7 +10,6 @@
 | Prometheus & Grafana             | [YT Video](https://www.youtube.com/watch?v=r8UvWSX3KA8)      | [TODO Assignment](#2-custom-logs-metrics-and-traces)            |
 | Azure Backup & Site Recovery     | [YT Video]()                                                 | [See Assignment](#3-azure-backup--site-recovery)                                                                |
 
-
 ## Supplemental Materials
 
 ### 1. Azure APM Services

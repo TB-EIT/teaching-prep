@@ -32,7 +32,16 @@
 
 ### 2. Private DNS Zones
 0. Capture the screenshots for the below milestones and submit an archive of them to me over Skype.
-1. TODO
+1. Provision Private DNS zone named <your_name>.org
+2. Provision a Vnet with a single subnet.
+3. Link your Private DNS zone to your VNet and enable VM auto-registration.
+4. Provision two (cheapest) VMs into your subnet. One (VM1) with Public IP address, one without (VM2). Allow SSH/RDP for VM1.
+5. Check the Recordsets in your Private DNS zone. Add an A record to map google.<your_name>.org FQDN to one of google.com pubic IPs (use dig/nslookup to find it).
+6. Add a CNAME record to map facebook.<your_name>.org to facebook.com
+7. SSH/RDP onto VM1. Jump over to VM2 using SSH/RDP and machine's private FQDN (not the IP address).
+8. curl google.<your_name>.org, do you get some response from google.com?
+9. curl facebook.<your_name>.org, do you get some response from facebook.com?
+10. Clean up your Azure resources.
 
 ### 3. NAT Gateways
 0. Capture the screenshots for the below milestones and submit an archive of them to me over Skype.

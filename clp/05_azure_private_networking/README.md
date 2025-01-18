@@ -7,6 +7,7 @@
 | Private DNS Zones | [See Supplemental Material](#1-private-dns-zones)            | [See Assignment](#2-private-dns-zones)          |
 | NAT Gateways      | [YT Video](https://youtu.be/AMr_IPk7wyk?si=ATlL73PjUbCy26-E) | [See Assignment](#3-nat-gateways)               |
 | Private Links     | [YT Video](https://www.youtube.com/watch?v=57ZwdztCx2w)      | -                                               |
+| P2S VPN Gateway   | [YT Video](https://www.youtube.com/watch?v=Z_YjuTt6CXw)      | [See Assignment](#4-p2s-vpn-gateways)           |
 
 ## Supplemental Materials
 
@@ -53,3 +54,24 @@
 6. Whitelist the NAT gateway Outbound IP address in the PaaS resource network settings.
 7. Repeat steps 3 and 4. Access should be allowed now.
 8. Clean up the resources.
+
+### 4. P2S VPN Gateways
+0. Capture the screenshots for the below milestones and submit an archive of them to me over Skype.
+1. Provision a Vnet with single subnet.
+2. Provision a (cheapest) VM with no Public IP address into your subnet. Don't open ports 22/3389 and 80.
+3. Add a VPN Gateway subnet to your VNet.
+4. Provision a VPN Gateway (VpnGw1 SKU) using the Gateway subnet in your VNet.
+5. Generate root and client public and private certificates.
+   * [Windows instructions](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site)
+   * [MacOS/Linux instructions](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-certificates-linux-openssl)
+6. Configure a P2S VPN connection in your VPN gateway using the public root certificate. Use OpenSSL tunnel for Windows/Linux clients and/or IKEv2 tunnel for Windows/MacOS.
+   * [End-to-end instructions](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-certificate-gateway)
+7. Install and configure a VPN client on your machine.
+   * [Windows Native VPN client](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-windows-native)
+   * [Windows OpenVPN V3 client](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-windows-openvpn-client-version-3)
+   * [MacOS Native VPN client](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-cert-mac)
+   * [Linux OpenVPN client](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-certificate-openvpn-linux)
+8. Connect to your VPN Gateway using your VPN client.
+9. SSH/RDP to your VPN using its private IP address. Install a web-server (Nginx/Apache/IIS) on your VM.
+10. Open your web-server main page from your laptop browser using its private IP address.
+11. Clean up the resources.

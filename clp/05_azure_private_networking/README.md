@@ -1,13 +1,15 @@
 # Learning Plan
 
-| Topics            | Supplemental Materials                                       | Assignments                                     |
-| ----------------- | ------------------------------------------------------------ | ----------------------------------------------- |
-| Service Endpoints | [YT Video](https://www.youtube.com/watch?v=q8s-zmHighs)      | -                                               |
-| Private Endpoints | [YT Video](https://www.youtube.com/watch?v=lwLOGsZOV1w)      | [See Assignment](#1-service--private-endpoints) |
-| Private DNS Zones | [See Supplemental Material](#1-private-dns-zones)            | [See Assignment](#2-private-dns-zones)          |
-| NAT Gateways      | [YT Video](https://youtu.be/AMr_IPk7wyk?si=ATlL73PjUbCy26-E) | [See Assignment](#3-nat-gateways)               |
-| Private Links     | [YT Video](https://www.youtube.com/watch?v=57ZwdztCx2w)      | -                                               |
-| P2S VPN Gateway   | [YT Video](https://www.youtube.com/watch?v=Z_YjuTt6CXw)      | [See Assignment](#4-p2s-vpn-gateways)           |
+| Topics              | Supplemental Materials                                       | Assignments                                     |
+| ------------------- | ------------------------------------------------------------ | ----------------------------------------------- |
+| Service Endpoints   | [YT Video](https://www.youtube.com/watch?v=q8s-zmHighs)      | -                                               |
+| Private Endpoints   | [YT Video](https://www.youtube.com/watch?v=lwLOGsZOV1w)      | [See Assignment](#1-service--private-endpoints) |
+| Private DNS Zones   | [See Supplemental Material](#1-private-dns-zones)            | [See Assignment](#2-private-dns-zones)          |
+| NAT Gateways        | [YT Video](https://youtu.be/AMr_IPk7wyk?si=ATlL73PjUbCy26-E) | [See Assignment](#3-nat-gateways)               |
+| Private Links       | [YT Video](https://www.youtube.com/watch?v=57ZwdztCx2w)      | -                                               |
+| P2S VPN Gateway     | [YT Video](https://www.youtube.com/watch?v=Z_YjuTt6CXw)      | [See Assignment](#4-p2s-vpn-gateways)           |
+| S2S VPN Gateway     | [YT Video](https://www.youtube.com/watch?v=i4Ph4n7v3WQ)      | -                                               |
+| Azure Load Balancer | [YT Video](https://www.youtube.com/watch?v=wJvmXM81tEI)      | [See Assignment](#5-azure-load-balancers)       |
 
 ## Supplemental Materials
 
@@ -75,3 +77,24 @@
 9. SSH/RDP to your VPN using its private IP address. Install a web-server (Nginx/Apache/IIS) on your VM.
 10. Open your web-server main page from your laptop browser using its private IP address.
 11. Clean up the resources.
+
+### 5. Azure Load Balancers
+0. Capture the screenshots for the below milestones and submit an archive of them to me over Skype.
+1. Prepare a VM image in an Image Gallery that automatically runs an API application when the VM starts.
+   * Application should place some light CPU and memory load onto the VM and indicate which VM processed the request.
+   * [Example Application](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/load_balancer/express_js/status_app)
+2. Provision a (cheapest) VM using the above image in a VNet. At the time when you test the loadbalancer the VM should not have a public IP address.
+3. Provision a VMSS that uses (cheapest) VMs to run the VM image above. Configure the CPU autoscaling for up to 3 VM instances. VM instances must not have public IP addresses.
+4. Provision a Standard Public Load Balancer (LB).
+   * Use a Public IP address for the frontend configuration.
+   * Add both a singular VM and the VMSS to a single backed pool.
+   * Configure the health probe to hit the health probe endpoint of your application.
+   * Create the load balancing rule that routes the traffic from port 80 of the LB to the API port of your VMS.
+   * Once the LB is provisioned navigate to VMSS instances and click on "Upgrade" button.
+5. Use your browser to submit HTTP requests to port 80 of LB public IP address. Use multiple browsers, incognito windows, and time separated attempts to hit both the singular VM and a VMSS VM.
+   * For some reason I had to occasionaly whitelist the application ports (ans the SSH/RDP ports) in the NSG rules, not sure why, but you might have to the same.
+6. Configure Inbound NAT rules to be able to SSH/RDP to every machine in the backend pool.
+7. Configure the Outbound rules to allow your backend pool VMs to talk to the public internet. curl google.com before and after to verify.
+8. Run a application/script/JMeter to place enough load for long enough time on the load balancer to trigger the VMSS autoscaling. Track the max CPU usage metrics in Azure monitor to verify that the load is balanced evenly accross the machines.
+   * [Example Load Testing Application](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/load_balancer/python/load_tester)
+9.  Clean up the resources.

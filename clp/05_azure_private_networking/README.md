@@ -10,6 +10,7 @@
 | P2S VPN Gateway     | [YT Video](https://www.youtube.com/watch?v=Z_YjuTt6CXw)      | [See Assignment](#4-p2s-vpn-gateways)           |
 | S2S VPN Gateway     | [YT Video](https://www.youtube.com/watch?v=i4Ph4n7v3WQ)      | -                                               |
 | Azure Load Balancer | [YT Video](https://www.youtube.com/watch?v=wJvmXM81tEI)      | [See Assignment](#5-azure-load-balancers)       |
+| Azure App Gateway   | [YT Video](https://www.youtube.com/watch?v=DjNPHetdlQo)      | [See Assignment](#6-azure-load-balancers)       |
 
 ## Supplemental Materials
 
@@ -98,3 +99,20 @@
 8. Run a application/script/JMeter to place enough load for long enough time on the load balancer to trigger the VMSS autoscaling. Track the max CPU usage metrics in Azure monitor to verify that the load is balanced evenly accross the machines.
    * [Example Load Testing Application](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/load_balancer/python/load_tester)
 9.  Clean up the resources.
+
+### 6. Azure Load Balancers
+0. Capture the screenshots for the below milestones and submit an archive of them to me over Skype.
+1. Provision a VNet with at least two subnets, one of them being dedicated for the App Gateway.
+2. Provision the infrastructure for and deploy two different application that expose public or private endpoints.
+   * One application can be the status app from the previous assignment, another can be a dummy App Service Application.
+3. Provision a Standard Application Gateway.
+   * Use the dedicated subnet you provisioned before.
+   * Use Public IP address for the App Gateways frontend.
+   * Configure an HTTP Listener that listens on port 80.
+   * Configure a Backend pool and backend configuration that can be used to reach your application.
+      - Depending on the backend you mayb need to adjust the protocol, ports, path override, host override, etc.
+   * Configure a URL path based rule that can route the traffic from the App Gateway to either application.
+4. Open the public IP address of your App Gateway in you browser and use URL path based routing to route the trafic to both apps.
+5. Enable WAF policy in the prevention mode for your App Gateway. Set a simple custom rule that would allow you to test the policy.
+6. Demonstrate that your custom WAF policy rule works by blocking the traffic to the App Gateway.
+7. Clean up the resources.

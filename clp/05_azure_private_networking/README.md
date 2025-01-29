@@ -10,7 +10,7 @@
 | P2S VPN Gateway     | [YT Video](https://www.youtube.com/watch?v=Z_YjuTt6CXw)      | [See Assignment](#4-p2s-vpn-gateways)           |
 | S2S VPN Gateway     | [YT Video](https://www.youtube.com/watch?v=i4Ph4n7v3WQ)      | -                                               |
 | Azure Load Balancer | [YT Video](https://www.youtube.com/watch?v=wJvmXM81tEI)      | [See Assignment](#5-azure-load-balancers)       |
-| Azure App Gateway   | [YT Video](https://www.youtube.com/watch?v=DjNPHetdlQo)      | [See Assignment](#6-azure-load-balancers)       |
+| Azure App Gateway   | [YT Video](https://www.youtube.com/watch?v=DjNPHetdlQo)      | [See Assignment](#6-azure-application-gateway)  |
 
 ## Supplemental Materials
 
@@ -100,7 +100,7 @@
    * [Example Load Testing Application](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/load_balancer/python/load_tester)
 9.  Clean up the resources.
 
-### 6. Azure Load Balancers
+### 6. Azure Application Gateway
 0. Capture the screenshots for the below milestones and submit an archive of them to me over Skype.
 1. Provision a VNet with at least two subnets, one of them being dedicated for the App Gateway.
 2. Provision the infrastructure for and deploy two different application that expose public or private endpoints.

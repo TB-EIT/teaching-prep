@@ -8,19 +8,19 @@ This rubric is designed to evaluate answers during mock interviews on a scale fr
 
 Use this section to assess the correctness, completeness, and relevance of the candidate’s answer. The base score should be decided **before** applying any penalties or bonuses.
 
-| **Score** | **Criteria**                                                                                                                                 |
-|-----------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| **10**    | **Exceptionally correct and comprehensive**: The answer is 100% correct, fully exhaustive, and provides an insight or perspective new to the interviewer.                      |
-| **9**     | **Fully correct and comprehensive**: The answer is 100% correct and fully exhaustive (covers all key points with no omissions), but does not necessarily introduce new insights. |
-| **8**     | **Correct and mostly comprehensive**: The answer is correct but with a **few minor relevant omissions**. Overall demonstrates thorough understanding but misses small details.   |
-| **7**     | **Mostly correct**: The answer is substantially correct but with **multiple relevant omissions** or gaps in reasoning. The main idea is there, but some completeness is lacking. |
-| **6**     | **Slightly above baseline**: The answer is **more correct than not**, addressing the core of the question but **only scratching the surface**. Key details or depth are missing.  |
-| **5**     | **Correct deflection**: The candidate cannot directly answer the main question but **correctly addresses a related/similar** question, showing some domain knowledge.           |
+| **Score** | **Criteria**                                                                                                                                                                         |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **10**    | **Exceptionally correct and comprehensive**: The answer is 100% correct, fully exhaustive, and provides an insight or perspective new to the interviewer.                            |
+| **9**     | **Fully correct and comprehensive**: The answer is 100% correct and fully exhaustive (covers all key points with no omissions), but does not necessarily introduce new insights.     |
+| **8**     | **Correct and mostly comprehensive**: The answer is correct but with a **few minor relevant omissions**. Overall demonstrates thorough understanding but misses small details.       |
+| **7**     | **Mostly correct**: The answer is substantially correct but with **multiple relevant omissions** or gaps in reasoning. The main idea is there, but some completeness is lacking.     |
+| **6**     | **Slightly above baseline**: The answer is **more correct than not**, addressing the core of the question but **only scratching the surface**. Key details or depth are missing.     |
+| **5**     | **Correct deflection**: The candidate cannot directly answer the main question but **correctly addresses a related/similar** question, showing some domain knowledge.                |
 | **4**     | **Mostly correct deflection**: The candidate deflects to a related question but only **partially** answers correctly. Some relevant ideas are present, but confusion or gaps remain. |
-| **3**     | **Vague familiarity**: The candidate shows **minimal understanding** of the topic. The response contains correct terms or concepts but lacks coherence or depth.                |
-| **2**     | **Distantly related**: The candidate provides content that is **tangentially related** to the question’s domain but does not address the core.                                  |
-| **1**     | **Unrelated**: The candidate’s response is clearly **off-topic** and does not demonstrate meaningful knowledge of the subject.                                                 |
-| **0**     | **No attempt / Pass**: The candidate explicitly passes or offers **no answer** to the question.                                                                                  |
+| **3**     | **Vague familiarity**: The candidate shows **minimal understanding** of the topic. The response contains correct terms or concepts but lacks coherence or depth.                     |
+| **2**     | **Distantly related**: The candidate provides content that is **tangentially related** to the question’s domain but does not address the core.                                       |
+| **1**     | **Unrelated**: The candidate’s response is clearly **off-topic** and does not demonstrate meaningful knowledge of the subject.                                                       |
+| **0**     | **No attempt / Pass**: The candidate explicitly passes or offers **no answer** to the question.                                                                                      |
 
 ### Notes on “Exhaustive” and “Omissions”
 - **Exhaustive**: The candidate explains the **key concepts**, **relevant nuances**, and **common pitfalls** comprehensively.  
@@ -32,14 +32,14 @@ Use this section to assess the correctness, completeness, and relevance of the c
 
 These penalties account for communication issues, confidence, or intervention needed. Each penalty can be applied **once or multiple times** (unless otherwise specified). Consider capping penalties so final scores cannot go below zero, or clarify if negative scores are simply reported as 0.
 
-| **Code**       | **Penalty** | **Description**                                                                                                                     |
-|----------------|------------:|-------------------------------------------------------------------------------------------------------------------------------------|
-| **TS / TL**    |        -2   | **Too Short / Too Long**: The candidate either took **less than half** or **more than twice** the recommended duration for the question. <br><br>**Time Guidelines**: <ul><li>Short question: ~30 sec</li><li>Medium question: ~90 sec</li><li>Scenario-based question: ~180 sec</li></ul> If the candidate uses significantly less or more than 2× the recommended time, penalize. |
-| **TV**         |        -2   | **Too Vague**: The response lacks clarity, is confusing, or does not directly address the question.                                                                        |
-| **NC**         |        -2   | **Not Confident**: The candidate’s delivery indicates significant uncertainty (excessive disclaimers, repeated self-doubt, or hesitant communication).                    |
-| **RQ**         |        -1   | **Repeat/Rephrase Question**: The interviewer had to repeat or significantly rephrase the question due to the candidate’s lack of focus or understanding.                 |
-| **H / HH / HHH** |   -1 / -2 / -3 | **Hints**: The interviewer provided hints to keep the candidate on track. <br> - **H (-1)**: Minor nudge <br> - **HH (-2)**: Multiple clarifications <br> - **HHH (-3)**: Significant guidance was required |
-| **I**          |        -1   | **Interruption**: The candidate **interrupts the interviewer** inappropriately. (If the interviewer interrupts the candidate, count it as a hint, not as an interruption.) |
+| **Code**         |  **Penalty** | **Description**                                                                                                                                                                                                                                                                                                                                                                     |
+| ---------------- | -----------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **TS / TL**      |           -2 | **Too Short / Too Long**: The candidate either took **less than half** or **more than twice** the recommended duration for the question. <br><br>**Time Guidelines**: <ul><li>Short question: ~30 sec</li><li>Medium question: ~90 sec</li><li>Scenario-based question: ~180 sec</li></ul> If the candidate uses significantly less or more than 2× the recommended time, penalize. |
+| **TV**           |           -2 | **Too Vague**: The response lacks clarity, is confusing, or does not directly address the question.                                                                                                                                                                                                                                                                                 |
+| **NC**           |           -2 | **Not Confident**: The candidate’s delivery indicates significant uncertainty (excessive disclaimers, repeated self-doubt, or hesitant communication).                                                                                                                                                                                                                              |
+| **RQ**           |           -1 | **Repeat/Rephrase Question**: The interviewer had to repeat or significantly rephrase the question due to the candidate’s lack of focus or understanding.                                                                                                                                                                                                                           |
+| **H / HH / HHH** | -1 / -2 / -3 | **Hints**: The interviewer provided hints to keep the candidate on track. <br> - **H (-1)**: Minor nudge <br> - **HH (-2)**: Multiple clarifications <br> - **HHH (-3)**: Significant guidance was required                                                                                                                                                                         |
+| **I**            |           -1 | **Interruption**: The candidate **interrupts the interviewer** inappropriately. (If the interviewer interrupts the candidate, count it as a hint, not as an interruption.)                                                                                                                                                                                                          |
 
 ### Applying Penalties
 
@@ -105,18 +105,46 @@ These do not directly affect the 0–10 score unless you choose to factor them i
 ---
 
 ## 7. Performance Thresholds
-An interview performance is considered **positive** if the average question score is **> 6.5**, 
-and **very good** if it is **> 7.5**.
+| Average Score | Assessed Candidate Performance |
+| ------------- | ------------------------------ |
+| < 5.5         | Unsatisfactory                 |
+| >= 5.5, < 6.5 | Needs Improvement              |
+| >= 6.5, < 7.5 | Good                           |
+| >= 7.5, < 8.5 | Excelent                       |
+| > 8.5         | Better than the Interviewer    |
 
 ---
 
 ## 8. Template Score Sheet
-| Question          | Challenge | Final Score | Penalties | Comments                       |
-| ----------------- | --------- | ----------: | --------: | ------------------------------ |
-| Question 1        | Easy      |       XX/10 |           |                                |
-| Question 2        | Medium    |       XX/10 |           |                                |
-| Question 3        | Hard      |       XX/10 |           |                                |
-| **Average Score** |           |      X.X/10 |           | Sum of scores / # of questions |
+```
+# Mock Interview Score Sheet
+
+| Candidate    | <REPLACE NAME>                   |
+| ------------ | -------------------------------- |
+| Interviewer  | <REPLACE NAME>                   |
+| Date         | <REPLACE DATE>                   |
+| JD           | [<REPLACE LINK>](<REPLACE LINK>) |
+| Score Rubric | [<REPLACE LINK>](<REPLACE LINK>) |
+
+## Per-Question Scores
+
+| Final Score | Penalties | Q Challenge | Questions  |
+| ----------- | :-------- | ----------- | :--------- |
+| XX/10       |           | Easy        | Question 1 |
+| XX/10       |           | Medium      | Question 1 |
+| XX/10       |           | Hard        | Question 3 |
+
+## Overall
+| Average Score | Interview Challenge | Overall Performance |
+| ------------- | ------------------- | ------------------- |
+| X.X/10        |                     |                     |
+
+## Action Items
+The candidate should:
+- Do this.
+- And that.
+- And the other.
+```
 
 ---
 

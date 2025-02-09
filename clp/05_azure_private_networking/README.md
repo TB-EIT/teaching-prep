@@ -1,16 +1,17 @@
 # Learning Plan
 
-| Topics              | Supplemental Materials                                       | Assignments                                     |
-| ------------------- | ------------------------------------------------------------ | ----------------------------------------------- |
-| Service Endpoints   | [YT Video](https://www.youtube.com/watch?v=q8s-zmHighs)      | -                                               |
-| Private Endpoints   | [YT Video](https://www.youtube.com/watch?v=lwLOGsZOV1w)      | [See Assignment](#1-service--private-endpoints) |
-| Private DNS Zones   | [See Supplemental Material](#1-private-dns-zones)            | [See Assignment](#2-private-dns-zones)          |
-| NAT Gateways        | [YT Video](https://youtu.be/AMr_IPk7wyk?si=ATlL73PjUbCy26-E) | [See Assignment](#3-nat-gateways)               |
-| Private Links       | [YT Video](https://www.youtube.com/watch?v=57ZwdztCx2w)      | -                                               |
-| P2S VPN Gateway     | [YT Video](https://www.youtube.com/watch?v=Z_YjuTt6CXw)      | [See Assignment](#4-p2s-vpn-gateways)           |
-| S2S VPN Gateway     | [YT Video](https://www.youtube.com/watch?v=i4Ph4n7v3WQ)      | -                                               |
-| Azure Load Balancer | [YT Video](https://www.youtube.com/watch?v=wJvmXM81tEI)      | [See Assignment](#5-azure-load-balancers)       |
-| Azure App Gateway   | [YT Video](https://www.youtube.com/watch?v=DjNPHetdlQo)      | [See Assignment](#6-azure-application-gateway)  |
+| Topics                | Supplemental Materials                                       | Assignments                                     |
+| --------------------- | ------------------------------------------------------------ | ----------------------------------------------- |
+| Service Endpoints     | [YT Video](https://www.youtube.com/watch?v=q8s-zmHighs)      | -                                               |
+| Private Endpoints     | [YT Video](https://www.youtube.com/watch?v=lwLOGsZOV1w)      | [See Assignment](#1-service--private-endpoints) |
+| Private DNS Zones     | [See Supplemental Material](#1-private-dns-zones)            | [See Assignment](#2-private-dns-zones)          |
+| NAT Gateways          | [YT Video](https://youtu.be/AMr_IPk7wyk?si=ATlL73PjUbCy26-E) | [See Assignment](#3-nat-gateways)               |
+| Private Links         | [YT Video](https://www.youtube.com/watch?v=57ZwdztCx2w)      | -                                               |
+| P2S VPN Gateway       | [YT Video](https://www.youtube.com/watch?v=Z_YjuTt6CXw)      | [See Assignment](#4-p2s-vpn-gateways)           |
+| S2S VPN Gateway       | [YT Video](https://www.youtube.com/watch?v=i4Ph4n7v3WQ)      | -                                               |
+| Azure Load Balancer   | [YT Video](https://www.youtube.com/watch?v=wJvmXM81tEI)      | [See Assignment](#5-azure-load-balancers)       |
+| Azure App Gateway     | [YT Video](https://www.youtube.com/watch?v=DjNPHetdlQo)      | [See Assignment](#6-azure-application-gateway)  |
+| Azure Traffic Manager | [YT Video](https://youtu.be/PfZPuBt50ps?si=W6x3ytYKFYSr8_ed) | [See Assignemnt](#7-azure-traffic-manager)      |
 
 ## Supplemental Materials
 
@@ -116,3 +117,21 @@
 5. Enable WAF policy in the prevention mode for your App Gateway. Set a simple custom rule that would allow you to test the policy.
 6. Demonstrate that your custom WAF policy rule works by blocking the traffic to the App Gateway.
 7. Clean up the resources.
+
+### 7. Azure Traffic Manager
+0. Capture the screenshots for the below milestones and submit an archive of them to me over Skype.
+1. Have your application deployed in two different Azure regions using VMs, VMSS, AppService, etc.
+   * Application HTTP response should be lightweight and should indicate which region is responding.
+   * [Example Suitable Application](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/load_balancer/express_js/status_app)
+2. Provision a Priority-based Traffic Manager profile, designate one regional endpoint of your application (primary) as priority 1 and another (secondary) as priority 2.
+3. Demonstrate automatic disaster recovery failover performed by the Traffic Manager.
+   * Generate ~10 minutes worth of load on the Traffic Manager endpoint. Consoder using thise [Load Generator](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/load_balancer/python/load_tester)
+   * Make sure all the traffic is going to the primary endpoint at first.
+   * After ~2 minutes - make primary endpoint unresponsive (stop/descale VMs, adjust NSG rules, etc.), wait for the error responses starting to come in from the load generator.
+   * After another ~2 minutes - notice how responses are again positive but coming from the secondary endpoint.
+4. Provision a Performance-based Traffic Manager profile, add two endpoints from different regions.
+5. Generate ~1 minute worth of load to the Traffic Manager profile from a VM close to the first endpoint, make sure only the first endpoint responds to the requests.
+6. Generate ~1 minute worth of load to the Traffic Manager profile from a VM close to the second endpoint, make sure only the second endpoint responds to the requests.
+7. Provision a Weight-based Traffic Manager profile, add prod endpoint with weight of 90, add canary endpoint with weight 10.
+8. Generate ~2 minutes worth of load to the Traffic Manager profile. Notice that most of the traffic goes to the prod endpoint, and only some to the canary endpoint.
+9. Clean up the resources.

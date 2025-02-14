@@ -1,0 +1,29 @@
+Job Description:
+
+Job Title: Azure Cloud Infrastructure Architect
+Location: Alpharetta, GA / Berkeley Heights, NJ / Frisco, TX (Onsite M-F)
+Client: Fiserv
+
+Primary Skillsets:
+- Cloud Architecture & Design: Expertise in designing scalable, secure, and resilient Azure infrastructure.
+- Azure Services: Proficiency in core Azure services like Azure Virtual Machines, App Services, Azure Storage, Networking, Azure Kubernetes Service (AKS), and more.
+- Infrastructure-as-Code (IaC): Experience with ARM templates, Terraform, and Azure Resource Manager for automated infrastructure deployment.
+- DevOps Integration: Strong knowledge of CI/CD pipelines, Azure DevOps, Git, and automation scripting (PowerShell, Bash).
+- Cloud Security: Proficiency in implementing security best practices, Azure Security Center, Azure Key Vault, and encryption techniques.
+- Monitoring & Optimization: Familiarity with Azure Monitor, Azure Log Analytics, and optimizing cloud performance and costs.
+- Disaster Recovery & Backup: Experience designing high availability, DR, and business continuity solutions.
+- Compliance & Governance: Strong understanding of regulatory requirements like GDPR, HIPAA, and setting up Azure governance policies.
+- Networking: Proficiency in Azure networking components, including VPN, VNet, peering, ExpressRoute, and load balancers.
+Collaboration & Leadership: Strong communication, collaboration, and mentoring skills, with the ability to lead technical teams.
+
+Responsibility:
+- Design and architect secure, scalable, and cost-effective Azure cloud infrastructure solutions.
+- Lead the migration of on-premises applications and data to the Azure cloud, defining strategy and execution plans.
+- Develop and maintain Azure governance frameworks, ensuring security, compliance, and cost optimization.
+- Implement Infrastructure-as-Code (IaC) solutions using tools like ARM templates, Terraform, and Azure DevOps.
+- Collaborate with DevOps teams to automate CI/CD pipelines, monitoring, and cloud infrastructure provisioning.
+- Ensure high availability, disaster recovery, and backup solutions within Azure environments.
+- Monitor Azure cloud performance, and manage resources using tools like Azure Monitor, Log Analytics, and Security Center.
+- Drive continuous improvement by evaluating new Azure features, technologies, and best practices.
+- Conduct regular security assessments and ensure compliance with relevant regulations and standards.
+- Provide guidance and leadership to cross-functional teams on Azure best practices, cloud adoption, and troubleshooting.

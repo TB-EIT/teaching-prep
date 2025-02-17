@@ -1,18 +1,18 @@
 # Learning Plan
 
-| Topics                | Supplemental Materials                                       | Assignments                                     |
-| --------------------- | ------------------------------------------------------------ | ----------------------------------------------- |
-| Service Endpoints     | [YT Video](https://www.youtube.com/watch?v=q8s-zmHighs)      | -                                               |
-| Private Endpoints     | [YT Video](https://www.youtube.com/watch?v=lwLOGsZOV1w)      | [See Assignment](#1-service--private-endpoints) |
-| Private DNS Zones     | [See Supplemental Material](#1-private-dns-zones)            | [See Assignment](#2-private-dns-zones)          |
-| NAT Gateways          | [YT Video](https://youtu.be/AMr_IPk7wyk?si=ATlL73PjUbCy26-E) | [See Assignment](#3-nat-gateways)               |
-| Private Links         | [YT Video](https://www.youtube.com/watch?v=57ZwdztCx2w)      | -                                               |
-| P2S VPN Gateway       | [YT Video](https://www.youtube.com/watch?v=Z_YjuTt6CXw)      | [See Assignment](#4-p2s-vpn-gateways)           |
-| S2S VPN Gateway       | [YT Video](https://www.youtube.com/watch?v=i4Ph4n7v3WQ)      | -                                               |
-| Azure Load Balancer   | [YT Video](https://www.youtube.com/watch?v=wJvmXM81tEI)      | [See Assignment](#5-azure-load-balancers)       |
-| Azure App Gateway     | [YT Video](https://www.youtube.com/watch?v=DjNPHetdlQo)      | [See Assignment](#6-azure-application-gateway)  |
-| Azure Traffic Manager | [YT Video](https://youtu.be/PfZPuBt50ps?si=W6x3ytYKFYSr8_ed) | [See Assignemnt](#7-azure-traffic-manager)      |
-| Azure Front Door      | [See Supplemental Material](#8-azure-front-door)                                                 |                                                 |
+| Topics                | Supplemental Materials                                       | Assignments                                      |
+| --------------------- | ------------------------------------------------------------ | ------------------------------------------------ |
+| Service Endpoints     | [YT Video](https://www.youtube.com/watch?v=q8s-zmHighs)      | -                                                |
+| Private Endpoints     | [YT Video](https://www.youtube.com/watch?v=lwLOGsZOV1w)      | [See Assignment](#1-service--private-endpoints)  |
+| Private DNS Zones     | [See Supplemental Material](#1-private-dns-zones)            | [See Assignment](#2-private-dns-zones)           |
+| NAT Gateways          | [YT Video](https://youtu.be/AMr_IPk7wyk?si=ATlL73PjUbCy26-E) | [See Assignment](#3-nat-gateways)                |
+| Private Links         | [YT Video](https://www.youtube.com/watch?v=57ZwdztCx2w)      | -                                                |
+| P2S VPN Gateway       | [YT Video](https://www.youtube.com/watch?v=Z_YjuTt6CXw)      | [See Assignment](#4-p2s-vpn-gateways)            |
+| S2S VPN Gateway       | [YT Video](https://www.youtube.com/watch?v=i4Ph4n7v3WQ)      | -                                                |
+| Azure Load Balancer   | [YT Video](https://www.youtube.com/watch?v=wJvmXM81tEI)      | [See Assignment](#5-azure-load-balancers)        |
+| Azure App Gateway     | [YT Video](https://www.youtube.com/watch?v=DjNPHetdlQo)      | [See Assignment](#6-azure-application-gateway)   |
+| Azure Traffic Manager | [YT Video](https://youtu.be/PfZPuBt50ps?si=W6x3ytYKFYSr8_ed) | [See Assignemnt](#7-azure-traffic-manager)       |
+| Azure Front Door      | [See Supplemental Material](#8-azure-front-door)             | [See Assignment](#8-azure-front-door-assignemnt) |
 
 ## Supplemental Materials
 

@@ -12,6 +12,7 @@
 | Azure Load Balancer   | [YT Video](https://www.youtube.com/watch?v=wJvmXM81tEI)      | [See Assignment](#5-azure-load-balancers)       |
 | Azure App Gateway     | [YT Video](https://www.youtube.com/watch?v=DjNPHetdlQo)      | [See Assignment](#6-azure-application-gateway)  |
 | Azure Traffic Manager | [YT Video](https://youtu.be/PfZPuBt50ps?si=W6x3ytYKFYSr8_ed) | [See Assignemnt](#7-azure-traffic-manager)      |
+| Azure Front Door      | [See Supplemental Material](#8-azure-front-door)                                                 |                                                 |
 
 ## Supplemental Materials
 
@@ -20,6 +21,10 @@
 * [DNS Records Explained](https://www.youtube.com/watch?v=HnUDtycXSNE)
 * [Understanding DNS in Azure](https://www.youtube.com/watch?v=Hiohn35DIqA)
 * [Mastering Azure Private DNS](https://www.youtube.com/watch?v=iz3MyO69YZU)
+
+### 8. Azure Front Door
+* [Microsoft Azure Front Door Deep Dive](https://youtu.be/DHiZbIks9i0?si=yUIeUp1dkIApMu96)
+* [Azure Front Door FULL COURSE IN 2.5 HOURS](https://www.youtube.com/watch?v=gcnoH0CiWw0)
 
 ## Assignments
 
@@ -135,3 +140,21 @@
 7. Provision a Weight-based Traffic Manager profile, add prod endpoint with weight of 90, add canary endpoint with weight 10.
 8. Generate ~2 minutes worth of load to the Traffic Manager profile. Notice that most of the traffic goes to the prod endpoint, and only some to the canary endpoint.
 9. Clean up the resources.
+
+### 8. Azure Front Door Assignemnt
+0. Capture the screenshots for the below milestones and submit an archive of them to me over Skype.
+1. Have your application deployed in two different Azure regions using VMs, VMSS, AppService, etc.
+   * Application HTTP response should be lightweight and should indicate which region is responding.
+   * [Example Suitable Application](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/load_balancer/express_js/status_app)
+2. Additionaly, deploy a multi-page static website into an Azure Storage Account.
+   * See this instruction [Video](https://youtu.be/ttmEOLKk3Cw?si=vGg-pXUFQQOC3O8f)
+3. Provison Standard Azure Front Door
+   * Have 3 origin groups and 3 routing rules.
+   * First origin and rule for the two endpoints of your application deployed in two different regions. Use latency sensitivity of 50ms or lower.
+   * Second origin and rule are the same as above but with the cached response.
+   * Third origin and rule is for the static website.
+4. Demonstrate Front Door ability to route the trafic to the closest endpoint by calling the Front Door on the path corresponding to the first rule.
+5. Demonstrate Front Door ability to return cached response much faster by calling the Front Door on the path corresponding to the cached rule.
+6. Demonstrate your ability to reach your static website through the Front Door by calling the last path.
+7. Implement the Rule Set that overwites the Front Doors routing desicion based on the URL parameter. Attach the rule set to the first rule and demonstrate it.
+8. Clean up the resources.

@@ -1,0 +1,17 @@
+Azure Databricks Architect
+
+15+ years of Data Solutions Design/Development Experience with at-least 2+ years working as Lead Data Architect for a medium to large sized project or proposal
+• Be able to Design & Develop and Discuss with client architect/team around data architecture and data related issues
+• Analyze and assess the impact of the requirements on the data and its lifecycle,  Lead the data architecture design of medium to complex data analytics applications and systems
+• Strong experience in Azure with hands-on experience in any 2 or more of : Azure SQL DB ,Azure SQL Managed Instance ,Azure Data Lake Store, Azure Cosmos DB, IoT/Event Hub
+• Strong experience in defining end to end data engineering solutions – with hands-on in any 2 or more of : Azure Data Factory, Azure DataBricks, Azure API for data, Logic Apps, T-SQL
+• Experience with design/develop 1 or more of below is preferred
+o Azure Synapse Analytics or Snowflake on Azure based solutions
+o Data Migration to Azure
+o Azure Analysis Services & PowerBI / Tableau based analytical reporting
+o Big-data Solutions leveraging HD-Insight based solutions OR Spark-Scala Batch/Micro-Batch OR Kafka based Streaming 
+o Azure ML / AI or  Any Analytical /Data Science (Python/R/SAS etc.) leveraged solutions
+o Data Governance Expertise with any of industry leading tools with training/exposure on Azure Purview
+• Exposure to Azure DevOps Implementation, DevSecOps / DataOps Methods preferred
+• Should be able to drive the technology design meetings, propose technology design and architecture
+• Demonstrate breadth of experience in various client scenarios and situations

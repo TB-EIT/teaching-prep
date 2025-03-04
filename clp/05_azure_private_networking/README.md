@@ -1,18 +1,19 @@
-# Learning Plan
+# Azure Advance Networkign Learning Plan
 
-| Topics                | Supplemental Materials                                       | Assignments                                      |
-| --------------------- | ------------------------------------------------------------ | ------------------------------------------------ |
-| Service Endpoints     | [YT Video](https://www.youtube.com/watch?v=q8s-zmHighs)      | -                                                |
-| Private Endpoints     | [YT Video](https://www.youtube.com/watch?v=lwLOGsZOV1w)      | [See Assignment](#1-service--private-endpoints)  |
-| Private DNS Zones     | [See Supplemental Material](#1-private-dns-zones)            | [See Assignment](#2-private-dns-zones)           |
-| NAT Gateways          | [YT Video](https://youtu.be/AMr_IPk7wyk?si=ATlL73PjUbCy26-E) | [See Assignment](#3-nat-gateways)                |
-| Private Links         | [YT Video](https://www.youtube.com/watch?v=57ZwdztCx2w)      | -                                                |
-| P2S VPN Gateway       | [YT Video](https://www.youtube.com/watch?v=Z_YjuTt6CXw)      | [See Assignment](#4-p2s-vpn-gateways)            |
-| S2S VPN Gateway       | [YT Video](https://www.youtube.com/watch?v=i4Ph4n7v3WQ)      | -                                                |
-| Azure Load Balancer   | [YT Video](https://www.youtube.com/watch?v=wJvmXM81tEI)      | [See Assignment](#5-azure-load-balancers)        |
-| Azure App Gateway     | [YT Video](https://www.youtube.com/watch?v=DjNPHetdlQo)      | [See Assignment](#6-azure-application-gateway)   |
-| Azure Traffic Manager | [YT Video](https://youtu.be/PfZPuBt50ps?si=W6x3ytYKFYSr8_ed) | [See Assignemnt](#7-azure-traffic-manager)       |
-| Azure Front Door      | [See Supplemental Material](#8-azure-front-door)             | [See Assignment](#8-azure-front-door-assignemnt) |
+| Topics                | Supplemental Materials                                       | Assignments                                                  |
+| --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Service Endpoints     | [YT Video](https://www.youtube.com/watch?v=q8s-zmHighs)      | -                                                            |
+| Private Endpoints     | [YT Video](https://www.youtube.com/watch?v=lwLOGsZOV1w)      | [See Assignment](#1-service--private-endpoints)              |
+| Private DNS Zones     | [See Supplemental Material](#1-private-dns-zones)            | [See Assignment](#2-private-dns-zones)                       |
+| NAT Gateways          | [YT Video](https://youtu.be/AMr_IPk7wyk?si=ATlL73PjUbCy26-E) | [See Assignment](#3-nat-gateways)                            |
+| Private Links         | [YT Video](https://www.youtube.com/watch?v=57ZwdztCx2w)      | -                                                            |
+| P2S VPN Gateway       | [YT Video](https://www.youtube.com/watch?v=Z_YjuTt6CXw)      | [See Assignment](#4-p2s-vpn-gateways)                        |
+| S2S VPN Gateway       | [YT Video](https://www.youtube.com/watch?v=i4Ph4n7v3WQ)      | -                                                            |
+| Azure Load Balancer   | [YT Video](https://www.youtube.com/watch?v=wJvmXM81tEI)      | [See Assignment](#5-azure-load-balancers)                    |
+| Azure App Gateway     | [YT Video](https://www.youtube.com/watch?v=DjNPHetdlQo)      | [See Assignment](#6-azure-application-gateway)               |
+| Azure Traffic Manager | [YT Video](https://youtu.be/PfZPuBt50ps?si=W6x3ytYKFYSr8_ed) | [See Assignemnt](#7-azure-traffic-manager)                   |
+| Azure Front Door      | [See Supplemental Material](#8-azure-front-door)             | [See Assignment](#8-azure-front-door-assignemnt)             |
+| Azure APIM            | [See Supplemental Material](#9-azure-apim)                   | [See Assignment](#9-azure-api-management-service-assignemnt) |
 
 ## Supplemental Materials
 
@@ -25,6 +26,10 @@
 ### 8. Azure Front Door
 * [Microsoft Azure Front Door Deep Dive](https://youtu.be/DHiZbIks9i0?si=yUIeUp1dkIApMu96)
 * [Azure Front Door FULL COURSE IN 2.5 HOURS](https://www.youtube.com/watch?v=gcnoH0CiWw0)
+
+### 9. Azure APIM
+* [Azure API Management Deep Dive](https://youtu.be/PXtFq5wmGt0?si=mo1SGdl8wKedVwqc)
+* [The Ultimate Azure API Management Course](https://youtu.be/K-tYU8GOUt0?si=vjnF46oHoWPMaXrh)
 
 ## Assignments
 
@@ -130,7 +135,7 @@
    * [Example Suitable Application](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/load_balancer/express_js/status_app)
 2. Provision a Priority-based Traffic Manager profile, designate one regional endpoint of your application (primary) as priority 1 and another (secondary) as priority 2.
 3. Demonstrate automatic disaster recovery failover performed by the Traffic Manager.
-   * Generate ~10 minutes worth of load on the Traffic Manager endpoint. Consoder using thise [Load Generator](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/load_balancer/python/load_tester)
+   * Generate ~10 minutes worth of load on the Traffic Manager endpoint. Consoder using this [Load Generator](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/load_balancer/python/load_tester)
    * Make sure all the traffic is going to the primary endpoint at first.
    * After ~2 minutes - make primary endpoint unresponsive (stop/descale VMs, adjust NSG rules, etc.), wait for the error responses starting to come in from the load generator.
    * After another ~2 minutes - notice how responses are again positive but coming from the secondary endpoint.
@@ -158,3 +163,22 @@
 6. Demonstrate your ability to reach your static website through the Front Door by calling the last path.
 7. Implement the Rule Set that overwites the Front Doors routing desicion based on the URL parameter. Attach the rule set to the first rule and demonstrate it.
 8. Clean up the resources.
+
+### 9. Azure API Management Service Assignemnt
+0. Capture the screenshots for the below milestones and submit an archive of them to me over Skype.
+1. Have an API application deployed to a VM, VMSS, AppService, etc.
+   * [Example Suitable Application](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/load_balancer/express_js/status_app)
+2. Prepare an OpenAPI file defining the API exposed by your application (use ChatGPT to do this quickly).
+3. Provision a Development tier APIM instance.
+4. Create an APIM product.
+5. Invite yourself using your personal email to the APIM product as a developer. Give yourself a subscription to the product.
+6. Add an API to your product by using the prepared OpenAPI file. Edit the resulting API to make it work (most importantly replace the backend).
+7. Publish the developer portal. Login into it with your personal email. Atempt to test the API from the portal. If that doesn't work due to CORS issues use the generated code snippets to test the API from your laptop.
+8. Test using additional revisions of your API.
+9. Test using additional versions of your API.
+10. Test using various API policies:
+   * Cache Lookup
+   * Rate Limiting
+     * Consider using this [Load Generator](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/load_balancer/python/load_tester) to trigger the rate limiting.
+   * Mock Responses
+11. Clean up the resources.

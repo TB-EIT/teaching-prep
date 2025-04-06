@@ -1,0 +1,23 @@
+# Linux Administration
+
+## Assignments
+
+| #   | Assignment                                                                                                                                                          | Can use PowerShell equivalents? | With common optional parameters? |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | -------------------------------- |
+| 1   | Practice using 'pwd', 'ls', 'cd' UNIX commands and special '.', '..', '/', '~', '-' directories.                                                                    |                                 |                                  |
+| 2   | Practice using 'touch', 'mkdir', 'cp', 'mv', 'rm' UNIX commands. (Bonus) Practice using wildcards to target multiple files/directories with those commands at once. |                                 |                                  |
+| 3   | Practice using 'cat', 'head', 'tail', 'less', 'more' UNIX commands. Use 'nano' or 'vi'/'vim' to create some file contents to browse.                                |                                 |                                  |
+| 4   | Practice using 'grep', 'sed', 'find' UNIX commands.                                                                                                                 |                                 |                                  |
+| 5   | Practice using '\|', '>', '>>', '<', '2>' UNIX redirects.                                                                                                           |                                 |                                  |
+| 6   | Practice using 'ps', 'top/htop', 'kill', 'which' UNIX commands and '&' operator.                                                                                    |                                 |                                  |
+| 7   | Practice using 'apt/apt-get' or 'yum' or 'brew' or 'snap' utility on your UNIX machine.                                                                             |                                 |                                  |
+| 8   | Practice using 'ssh', 'sftp', 'scp', 'curl', 'wget' UNIX commands.                                                                                                  |                                 |                                  |
+| 9   | Practice using 'useradd', 'passwd', 'groupadd', 'usermod' UNIX commands.                                                                                            |                                 |                                  |
+| 10  | Practice using 'stat', 'chmod', 'chown' UNIX commands.                                                                                                              |                                 |                                  |
+| 11  | Practice using 'cron' UNIX utility.                                                                                                                                 |                                 |                                  |
+| 12  | Practice using 'systemd' UNIX utility.                                                                                                                              |                                 |                                  |
+| 13  | Practice using 'tar', 'gzip', 'gunzip' UNIX commands.                                                                                                               |                                 |                                  |
+| 14  | Practice using '&&', '\|\|', ';', '\\', '$( ... )' UNIX operators.                                                                                                  |                                 |                                  |
+| 15  | Practice using 'ping', 'traceroute', 'ifconfig', 'netstat', 'dig', 'nslookup' UNIX commands.                                                                        |                                 |                                  |
+| 16  | Practice using 'df', 'du'                                                                                                                                           |                                 |                                  |
+| 17  | Practice using 'hostname', 'who', 'date', 'uptime', 'reboot', 'shutdown' UNIX commands.                                                                             |                                 |                                  |

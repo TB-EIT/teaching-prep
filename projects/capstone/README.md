@@ -16,23 +16,26 @@
 ## Coursework Learning Materials Demo Minimal Requirements
 Your presentation must demonstrate your mastery of the following things you learned:
 1. Azure Platform (at least AKS and ACR)
-3. Git (private GitHub and/or Azure DevOps repository)
+3. Git (private GitHub and/or Private Azure DevOps repository)
 4. Terraform (at least for AKS provisioning)
 5. Build and Deploy a web application that uses a modern web framework (Java Spring, .Net Core, Python Flask/Django, React/Angular, or something similar in complexity).
-6. Docker (+ ACR) and Kubernetes (AKS)
-7. Azure DevOps
-    * CI pipeline (YAML) that automatically triggers on code push to main. Builds a docker image and pushes it to ACR. Shares the k8s and/or Terraformpipeline artifacts with other pipelines.
+    * Application itself doesn't have to be complex (just a starter will do), but the framework has to be mature and popular.
+7. Docker (+ ACR) and Kubernetes (AKS)
+8. Azure DevOps
+    * CI pipeline (YAML) that automatically triggers on code push to main. Builds a docker image and pushes it to a private ACR. Shares the k8s and/or Terraform pipeline artifacts with other pipelines.
     * CD pipeline (YAML or Classic Release) that automatically triggers on CI pipeline completion. Provisions infrastructure and deploys the application to AKS in at least two environments. Prod deployment requires manual approval.
-    * Infrastructure provisioning can optionally be done with a third pipeline that can be triggered manually.
+    * Infrastructure provisioning can optionally be done with a third pipeline that can be triggered manually. Just don't do it the CI pipeline.
+  
+**Please only have a single AKS cluster, and use no more than 4 CPUs for it. Use AKS namespaces as your separate environment. Clear resources frequently.**
 
 ## Delivery Methods
 In your presentation, you are expected to follow the guidelines:
 1. Professional attire.
 2. Introduce yourself and your professional goals.
-3. Presentation slides that must include a Business Proposal / Idea / Pitch for a prospective client.
-4. The slides must clear clutter and not be wordy - You are expected to speak to your slides rather than read. Must include a conclusion and business recommendation.
+3. Presentation slides must include a Business Proposal / Idea / Pitch for a prospective client.
+4. The slides must be clear of clutter and not be wordy - You are expected to speak to your slides rather than read. Must include a conclusion and business recommendation.
 5. Describe the market need for your solutions, your target market, the resolution, and its functionality. 
-6. Showcase the solution's architecture diagram, your pipelines, and a detailed explanation of their operation.
+6. **Showcase the solution's architecture diagram**, your pipelines, and a detailed explanation of their operation.
 7. Live Demo (see below)
 
 ### Live Demo
@@ -58,8 +61,22 @@ As you work on the project, provide daily updates on your project according to t
 1. [ ] Have a suitable web application that you can build and run locally.
 2. [ ] Have a Dockerfile for the above application that you can build and run locally.
 3. [ ] Have k8s manifests that can be used to run the application from the local cluster (or manually provisioned AKS cluster).
-4. [ ] Have Terraform files to provision an AKS cluster in Azure.
+4. [ ] Have Terraform files to provision an AKS cluster in Azure from your laptop.
 5. [ ] Have a CI YAML pipeline that builds Docker image, pushes it to ACR, and shares Terraform & k8s artifacts with other pipelines. 
 6. [ ] Have a CD pipeline that provisions infrastructure and does AKS deployment in at least two environments.
 7. [ ] Have the presentation slides ready.
 8. [ ] (Optional) Implemented additional features beyond minimal technical requirements.
+
+## Suggested Bonus Improvements
+If you find yourself completing the Capstone entirely and still having a couple of free extra days. Feel free to develop additional features for your CI/CD pipeline. Here are some suggestions:
+1. Deploy an additional application. Maybe deploy a separate web application and API application.
+2. Use or deploy a database for your application.
+3. Use KeyVault integration.
+4. Develop a Dashboard or Alarm for your application.
+5. Have additional deployment environments (in addition to dev/test and prod).
+6. Deploy more than a starter application.
+7. Introduce testing steps - unit testing, end-to-end, load, penetration, security scanning.
+8. Integrate policies.
+9. Whatever else you think is appropriate.
+
+**Don't do any of the above before you satisfy the minimal requirements.**

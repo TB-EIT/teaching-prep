@@ -1,18 +1,18 @@
 # Learning Plan
 
-| Topics              | Supplemental Materials                                            | Assignments                                           |
-| ------------------- | ----------------------------------------------------------------- | ----------------------------------------------------- |
-| General Data Topics | [Supplemental Materials](#general-data-engineering-supplements)   | -                                                     |
-| Azure Databases     | [YouTube Video](https://www.youtube.com/watch?v=kmmuCapzX8I)      | -                                                     |
-| Azure Data Lake     | [YouTube Video](https://youtu.be/NHn5GAkvlwg?si=Yte4c2ydnzQNlC6m) | -                                                     |
-| Data Factory        | [Supplemental Materials](#data-factory-supplements)               | [Assignment](#1-azure-data-factory)                   |
-| Synapse Analytica   | [Supplemental Materials](#synapse-analytics-supplements)          | [Assignment](#2-azure-synapse-analytics)              |
-| Databricks          | [Supplemental Materials](#databricks-supplements)                 | [Assignment](#3-azure-databricks)                     |
-| Microsoft Fabric    | TODO                                                              | -                                                     |
-| Service Bus         | TODO                                                              | [Assignment](#4-azure-service-bus)                    |
-| Event Hub           | TODO                                                              | -                                                     |
-| Stream Analytics    | TODO                                                              | [Assignment](#5-azure-event-hub-and-stream-analytics) |
-| Kafka               | TODO                                                              | -                                                     |
+| Topics              | Supplemental Materials                                                                                  | Assignments                                           |
+| ------------------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| General Data Topics | [Supplemental Materials](#general-data-engineering-supplements)                                         | -                                                     |
+| Azure Databases     | [YouTube Video](https://www.youtube.com/watch?v=kmmuCapzX8I)                                            | -                                                     |
+| Azure Data Lake     | [YouTube Video](https://youtu.be/NHn5GAkvlwg?si=Yte4c2ydnzQNlC6m)                                       | -                                                     |
+| Data Factory        | [Supplemental Materials](#data-factory-supplements)                                                     | [Assignment](#1-azure-data-factory)                   |
+| Synapse Analytica   | [Supplemental Materials](#synapse-analytics-supplements)                                                | [Assignment](#2-azure-synapse-analytics)              |
+| Databricks          | [Supplemental Materials](#databricks-supplements)                                                       | [Assignment](#3-azure-databricks)                     |
+| Microsoft Fabric    | TODO                                                                                                    | -                                                     |
+| Service Bus         | [YouTube Playlist](https://www.youtube.com/watch?v=QaRzwiBaeGw&list=PLEfjf-ulZPNnfhvAocaHz1DksywZqrr-D) | [Assignment](#4-azure-service-bus)                    |
+| Kafka               | [Supplemental Materials](#kafka-supplements)                                                            | -                                                     |
+| Event Hub           | [YouTube Video](https://www.youtube.com/watch?v=Dc3P27BsK3E)                                            | -                                                     |
+| Stream Analytics    | [YouTube Video](https://youtu.be/1_1zTPuC6CU?si=mJ_JjsEG9XT7UgkJ)                                                                                                    | [Assignment](#5-azure-event-hub-and-stream-analytics) |
 
 ## Supplemental Materials
 
@@ -48,6 +48,10 @@
 1. [Getting Started](https://www.youtube.com/watch?v=RDuKKT3DGSo)
 2. [In-depth Tutorial](https://www.youtube.com/watch?v=XOSuR8g2SfQ&list=PL2IsFZBGM_IGiAvVZWAEKX8gg1ItnxEEb&index=1)
 
+### Kafka Supplements
+1. [Quick Conceptual Overview](https://youtu.be/QkdkLdMBuL0?si=Z8a4dNHky8AH0OiA)
+2. [Apache Kafka Crash Course With Spring Boot 3.0.x](https://www.youtube.com/watch?v=c7LPlWvxZcQ)
+
 ## Assignment
 
 ### 1. Azure Data Factory
@@ -70,9 +74,21 @@
    * Join a SalesLT.SalesOrderDetail.csv Dataset file you created earlier...
    * ... with SalesLT.SalesOrderHeader SQL Table.
    * Sink the joined data into Cosmos DB NoSQL database.
+7. Clean up your resources (consider keeping your Data Lake for the Synapse and Databricks assignment).
 
 ### 2. Azure Synapse Analytics
-TODO
+0. Take screenshots as you proceed. Submit an archive with them after you're done.
+1. Provision a Synapse Analytics Workspace
+2. From Synapse Analytics connect to the data stored in your Data Lake (DL) Storage.
+   * Create an External File Format (for your CSV file)
+   * Create an External Data Source pointing to your CSV file in your DL
+   * Create an External SQL Table using the above File Format and Data Source
+3. Run some analytical SQL queries against your data (below are some examples)
+   * Calculate total number of orders placed for each day (you probably only have one day worth of data)
+   * Calculate total number of unique products sold for each day
+   * Calculate the total revenue per each order for each day
+   * Calculate the total revenue per each product for each day
+4. Clean up your resources (consider keeping your DL for the Databricks assignment).
 
 ### 3. Azure Databricks
 TODO

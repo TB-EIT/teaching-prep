@@ -12,7 +12,7 @@
 | Service Bus         | [YouTube Playlist](https://www.youtube.com/watch?v=QaRzwiBaeGw&list=PLEfjf-ulZPNnfhvAocaHz1DksywZqrr-D) | [Assignment](#4-azure-service-bus)                    |
 | Kafka               | [Supplemental Materials](#kafka-supplements)                                                            | -                                                     |
 | Event Hub           | [YouTube Video](https://www.youtube.com/watch?v=Dc3P27BsK3E)                                            | -                                                     |
-| Stream Analytics    | [YouTube Video](https://youtu.be/1_1zTPuC6CU?si=mJ_JjsEG9XT7UgkJ)                                                                                                    | [Assignment](#5-azure-event-hub-and-stream-analytics) |
+| Stream Analytics    | [YouTube Video](https://youtu.be/1_1zTPuC6CU?si=mJ_JjsEG9XT7UgkJ)                                       | [Assignment](#5-azure-event-hub-and-stream-analytics) |
 
 ## Supplemental Materials
 
@@ -91,7 +91,19 @@
 4. Clean up your resources (consider keeping your DL for the Databricks assignment).
 
 ### 3. Azure Databricks
-TODO
+0. Take screenshots as you proceed. Submit an archive with them after you're done.
+1. Provision a Databricks Workspace resource. Launch Workspace. 
+2. Go to compute tab and provision a cheapes cluster.
+3. Create a Notebook to analyze some data in your Data Lake (DL).
+   * Use combination of PySpark and Markdown to implement the notebook.
+   * Create a Spark Dataframe from a CSV file sotred in your DL using Storage Account keys.
+   * Print the schema and preview data in your dataframe.
+   * Calculate total number of orders placed for each day (you probably only have one day worth of data)
+   * Calculate total number of unique products sold for each day
+   * Calculate the total revenue per each order for each day
+   * Calculate the total revenue per each product for each day
+   * (Bonus) Use Python's matplotlib library to visualize the results of last to analytics
+4. Clean up your resources (consider keeping your DL for the Databricks assignment).
 
 ### 4. Azure Service Bus
 TODO

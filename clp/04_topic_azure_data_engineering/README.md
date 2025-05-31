@@ -131,4 +131,17 @@
 13. Clean up your resources.
 
 ### 5. Azure Event Hub and Stream Analytics
-TODO
+0. Take screenshots as you proceed. Submit an archive with them after you're done.
+1. Provision an Azure Event Hub Namespace (Standard Tier) with one Throughput Unit.
+2. Provision an Event Hub topic in your Namespace. Configure it with three partitions.
+3. Use Azure Portal Event Hub Data Explorer to explore your Event Hub:
+   * Send messages to your Event Hub topic as needed.
+   * Retrieve messages from your Event Hub topic from the oldest position.
+   * ... from the newest position.
+   * ... from a specific position by message offset (sequence number) and by enqueue time.
+   * Try retrieving messages from a specific partition as needed.
+   * Try retrieving messages from a default consumer group and from a custom consumer group.
+3. Use Azure SDK to send and receive messages to/from your Event Hub topic.
+   * Feel free to use the applications from this [Repo and Folder](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/eventhub/python) or ask ChatGPT to generate a sample code for you.
+   * Try to repeat some of the operations you did from Azure Portal.
+4. Clean up your resources.

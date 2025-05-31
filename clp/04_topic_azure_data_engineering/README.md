@@ -1,4 +1,9 @@
-# Learning Plan
+# Azure Data Engineering Topics
+
+* Below are some sample materials to familiarize Azure DevOps and Infra Engineers with Data Engineering topics and relevant Azure Services.
+* This constitutes and overview of the domain. Below materials don't cover any of the topcis in nearly enough depth to make you a proficient Data Engineer (or much less Data Scientist)
+
+## Learning Plan
 
 | Topics              | Supplemental Materials                                                                                  | Assignments                                           |
 | ------------------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
@@ -106,7 +111,24 @@
 4. Clean up your resources (consider keeping your DL for the Databricks assignment).
 
 ### 4. Azure Service Bus
-TODO
+0. Take screenshots as you proceed. Submit an archive with them after you're done.
+1. Provision an Azure Service Bus Namespace (Standard Tier).
+2. Under Queues, create a new 'test-queue'. Note the value in lock duration setting. Examine the other settings as well.
+3. Under Topics, create a new 'test-topic'.
+4. Navigate to 'Queues' -> 'test-queue' -> 'Shared access policies' -> 'Add'. Create a 'queue-producer' policy with Send permissions and a 'queue-consumer' policy with Listen permissions.
+5. Navigate to 'Topics' -> 'test-topic' -> 'Shared access policies' -> 'Add'. Create a 'topic-producer' policy with Send permissions, 'topic-consumer-one', and 'topic-consumer-two' policy with Listen permissions.
+6. Use Azure Portal Service Bus Explorer to send a message to your 'test-queue'. Then use it to receive the message in a Peek Mode. Then receive the message in a 'Receive Mode' and 'Peek Lock Mode'. Try it again 10 minutes later to see if the message is still there. Then receive the message in a 'Receive Mode' and 'Receive and Delete Mode'. Try it again 10 minutes later to see if the message is still there.
+7. Use Azure CLI to send and receive messages to/from your 'test-queue'. You can try doing it the same modes as above, but it's not required.
+8. Use Azure SDK to send and receive messages to/from your 'test-queue'.
+   * Feel free to use the applications from this [Repo and Folder](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/service_bus/dotnet) or ask ChatGPT to generate a sample code for you.
+   * Use the 'queue-producer' and 'queue-consumer' policies you created earlier.
+9. Use Azure Portal Service Bus Explorer to send a message to your 'test-topic'. Notice that you can send a message, but you can't receive it, because you don't have any subscriptions to it yet.
+10. Create two subscriptions to your 'test-topic' using Azure Portal. Send a message to your 'test-topic' again. Use Azure Portal Service Bus Explorer to receive the message in a Peek Mode from both subscriptions. Then receive the message in a 'Receive Mode' and 'Receive and Delete Mode' from both subscriptions. Notice that you can receive the same message from both subscriptions, because they are independent of each other.
+11. Use Azure CLI to send and receive messages to/from your 'test-topic'.
+12. Use Azure SDK to send and receive messages to/from your 'test-topic'.
+    * Feel free to use the applications from this [Repo and Folder](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/service_bus/dotnet) or ask ChatGPT to generate a sample code for you.
+    * Use the 'topic-producer', 'topic-consumer-one', and 'topic-consumer-two' policies you created earlier.
+13. Clean up your resources.
 
 ### 5. Azure Event Hub and Stream Analytics
 TODO

@@ -144,4 +144,15 @@
 3. Use Azure SDK to send and receive messages to/from your Event Hub topic.
    * Feel free to use the applications from this [Repo and Folder](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/eventhub/python) or ask ChatGPT to generate a sample code for you.
    * Try to repeat some of the operations you did from Azure Portal.
-4. Clean up your resources.
+4. Provision an Azure Stream Analytics job. Use one streaming unit and enabled managed identity.
+5. Create an input for your Stream Analytics job using your Event Hub topic as a source.
+   * Use the default consumer group.
+   * Use the latest offset as a starting position.
+   * Use the managed identity to access your Event Hub topic.
+6. Create an output of your choice for your Stream Analytics (Service Bus Queue, Data Lake, Storage Account, SQL Database, Cosmos DB, your choice).
+   * Use the managed identity to access your output.
+7. Create an aggregation query for your Stream Analytics job to process the data from your Event Hub topic and output it to your output.
+8. Test your job, run it in a Debug mode, and then start it.
+   * Send some messages to your Event Hub with your Azure SDK application to see them processed by your Stream Analytics job.
+   * Use the output you created to verify that the data is being processed correctly.
+9. Clean up your resources.

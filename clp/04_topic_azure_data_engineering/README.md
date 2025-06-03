@@ -118,7 +118,6 @@
 4. Navigate to 'Queues' -> 'test-queue' -> 'Shared access policies' -> 'Add'. Create a 'queue-producer' policy with Send permissions and a 'queue-consumer' policy with Listen permissions.
 5. Navigate to 'Topics' -> 'test-topic' -> 'Shared access policies' -> 'Add'. Create a 'topic-producer' policy with Send permissions, 'topic-consumer-one', and 'topic-consumer-two' policy with Listen permissions.
 6. Use Azure Portal Service Bus Explorer to send a message to your 'test-queue'. Then use it to receive the message in a Peek Mode. Then receive the message in a 'Receive Mode' and 'Peek Lock Mode'. Try it again 10 minutes later to see if the message is still there. Then receive the message in a 'Receive Mode' and 'Receive and Delete Mode'. Try it again 10 minutes later to see if the message is still there.
-7. Use Azure CLI to send and receive messages to/from your 'test-queue'. You can try doing it the same modes as above, but it's not required.
 8. Use Azure SDK to send and receive messages to/from your 'test-queue'.
    * Feel free to use the applications from this [Repo and Folder](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/service_bus/dotnet) or ask ChatGPT to generate a sample code for you.
    * Use the 'queue-producer' and 'queue-consumer' policies you created earlier.

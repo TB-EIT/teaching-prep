@@ -31,11 +31,12 @@
 ### 1. Azure Built-in Logs, Metrics, and Dashboards
 0. Capture the screenshots as you progress, submit a zip with them to me over Skype personally, once you're done.
 1. Provision an application/compute service of your choice (not AKS) and deploy an application of your choosing onto it (hello world/starter application is fine).
-2. Adjust the diagnostic setting of your application/compute service to collect all the possible logs and store them into your Log Analytics Workspace.
-3. As you test your application, observe its Azure Monitor metrics and place a number of most relevant metrics (at least three) on your new Azure Dashboard.
+2. Adjust the diagnostic setting of your application/compute service to collect all the possible logs and store them in your Log Analytics Workspace.
+3. As you test your application, observe its Azure Monitor metrics and place a number of the most relevant metrics (at least three) on your new Azure Dashboard.
 4. Configure a metric-based alarm for your application, trigger it, and demonstrate the notifications being sent to your email.
 5. Configure a log-query-based alarm for your application, trigger it, and demonstrate the notifications being sent to your email.
-6. Cleanup your resources.
+6. Use at least three built-in metrics and at least one log query to build your own custom Azure Dashboard to observe your service health and operations.
+7. Cleanup your resources.
 
 ### 2. Custom Logs, Metrics, and Traces
 0. TODO
@@ -43,11 +44,11 @@
 ### 3. Azure Backup & Site Recovery
 0. Capture the screenshots as you progress, submit a zip with them to me over Skype personally, once you're done.
 1. Create a VM (Ubuntu 22, Standard Security type worked for me) in a primary region (East US should work).
-2. Login onto the VM, install a web-server and create some files on the machine.
-3. Create a Azure Backup vault in the same region where the VM is.
+2. Log in to the VM, install a web server, and create some files on the machine.
+3. Create an Azure Backup vault in the same region where the VM is.
 4. Configure the VM Backup using the vault.
-5. Test recovering the VM from the backup. Check that the web server and files still present on the machine.
-6. Create an Azure Sire Recovery vault in the secondary region (West US 3 worked for me).
+5. Test recovering the VM from the backup. Check that the web server and files are still present on the machine.
+6. Create an Azure Site Recovery vault in the secondary region (West US 3 worked for me).
 7. Create a VM replication from the primary region.
-8. Demonstrate Test Failover, Test Failover Cleanup, Failover, Commit, Re-Protect steps. Verify that the recovered machines have the web-servers and your files on them.
-9. Delete both the Backup and Site Recovery vaults using Azure generated power-shell scripts. Delete the VMs as well.
+8. Demonstrate Test Failover, Test Failover Cleanup, Failover, Commit, Re-Protect steps. Verify that the recovered machines have the web servers and your files on them.
+9. Delete both the Backup and Site Recovery vaults using Azure-generated PowerShell scripts. Delete the VMs as well.

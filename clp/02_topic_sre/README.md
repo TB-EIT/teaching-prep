@@ -39,7 +39,13 @@
 7. Cleanup your resources.
 
 ### 2. Custom Logs, Metrics, and Traces
-0. TODO
+0. Capture the screenshots as you progress, submit a zip with them to me over Discord personally, once you're done.
+1. Provision Log Analytics Workspace and Application Insights instance.
+2. (This is the hard part) Instrument a sample (.Net/Java/Python/NodeJS, etc.) application to produce and forward custom metrics, logs, and traces to your Application Insights instance.
+    * [Azure Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable)
+    * [Sample Application](https://gitlab.com/BasiukTV/azure-sandbox/-/tree/main/apps/app_insights/python)
+3. Demonstrate custom metrics, logs, and traces making their way to your Application Insights instance.
+4. Cleanup your resources.
 
 ### 3. Azure Backup & Site Recovery
 0. Capture the screenshots as you progress, submit a zip with them to me over Skype personally, once you're done.
